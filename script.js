@@ -488,7 +488,7 @@ function openTerms(title) {
 
 /* --- 14. 3D Card Tilt Physics --- */
 function init3DTiltEffects() {
-  const tiltElements = document.querySelectorAll('[data-tilt], .prop-item, .dest-card, .package-card, .station-pod, .service-glass-card, .collage-badge-card, .testimonial-card');
+  const tiltElements = document.querySelectorAll('[data-tilt], .prop-item, .dest-card, .package-card, .station-pod, .service-glass-card, .about-showcase-box, .showcase-signature-card, .bento-hero-tile, .bento-subtile, .testimonial-card');
 
   tiltElements.forEach(card => {
     card.addEventListener('mousemove', (e) => {

@@ -88,8 +88,8 @@
 
     <!-- Organic Wave Shape Divider at Bottom of Header -->
     <div class="header-wave-divider" aria-hidden="true">
-      <svg viewBox="0 0 1440 45" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M 0,0 L 1440,0 L 1440,12 C 1220,32 1040,16 860,26 C 680,36 480,8 320,10 C 220,12 140,42 0,34 Z" fill="#ffffff"/>
+      <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M 0,0 L 1440,0 L 1440,42 C 1080,12 840,12 720,42 C 600,72 360,72 0,42 Z" fill="#ffffff"/>
       </svg>
     </div>
   </header>
@@ -534,39 +534,91 @@
       <div class="container about-container-relative">
         <div class="about-grid">
           
-          <!-- Left: 5-Card Floating Creative Image Collage -->
-          <div class="about-collage">
+          <!-- Left: Luxury Travel Bento Showcase Box -->
+          <div class="about-showcase-box" data-tilt>
             
-            <!-- Card 1: Large traveler portrait photo (Left tall) -->
-            <div class="collage-card card-traveler" data-tilt>
-              <img src="assets/images/about-1.jpg" alt="Traveler looking at ocean" loading="lazy">
-              <div class="card-shine-effect"></div>
+            <!-- Ambient Golden Backlight Glow -->
+            <div class="box-ambient-glow"></div>
+
+            <!-- Corner Passport Visa Stamp -->
+            <div class="showcase-corner-stamp">
+              <img src="assets/travel-stamp.svg" alt="Certified Travel Partner" class="stamp-rotate-anim">
             </div>
 
-            <!-- Card 2: Tropical palms photo (Top middle) -->
-            <div class="collage-card card-palms" data-tilt>
-              <img src="assets/images/about-2.jpg" alt="Tropical paradise palms" loading="lazy">
-              <div class="card-shine-effect"></div>
-            </div>
-
-            <!-- Card 3: Resort bungalow villas (Middle landscape) -->
-            <div class="collage-card card-resort" data-tilt>
-              <img src="assets/images/about-resort.jpg" alt="Beach resort villas" loading="lazy">
-              <div class="card-shine-effect"></div>
-            </div>
-
-            <!-- Card 4: Golden rounded square badge (Bottom left overlapping) -->
-            <div class="collage-badge-card" data-tilt>
-              <div class="badge-plane-circle">
-                <i class="fa-solid fa-plane"></i>
+            <!-- Bento Gallery Grid (4 Curated Travel Photos) -->
+            <div class="bento-gallery-grid">
+              
+              <!-- Featured Hero Photo (Traveler looking out) -->
+              <div class="bento-hero-tile">
+                <img src="assets/images/about-1.jpg" alt="Personalised Travel Experiences" loading="lazy">
+                <div class="bento-tile-overlay">
+                  <span class="bento-badge-pill"><i class="fa-solid fa-compass"></i> Custom Journeys</span>
+                  <div class="bento-tile-caption">Crafted for memories that last a lifetime</div>
+                </div>
+                <div class="bento-glass-shine"></div>
               </div>
-              <span class="badge-special-text">Making every<br>trip special</span>
+
+              <!-- Right Sub-grid (3 Curated Destination Photos) -->
+              <div class="bento-tiles-stack">
+                
+                <!-- Photo 2: Tropical Island Palms -->
+                <div class="bento-subtile">
+                  <img src="assets/images/about-2.jpg" alt="Tropical Destinations" loading="lazy">
+                  <div class="bento-tile-overlay">
+                    <span class="mini-tag"><i class="fa-solid fa-umbrella-beach"></i> Tropical Escapes</span>
+                  </div>
+                  <div class="bento-glass-shine"></div>
+                </div>
+
+                <!-- Photo 3: Luxury Pool Resort Villas -->
+                <div class="bento-subtile">
+                  <img src="assets/images/about-resort.jpg" alt="Luxury Hotel Stays" loading="lazy">
+                  <div class="bento-tile-overlay">
+                    <span class="mini-tag"><i class="fa-solid fa-hotel"></i> Handpicked Resorts</span>
+                  </div>
+                  <div class="bento-glass-shine"></div>
+                </div>
+
+                <!-- Photo 4: Golden Airplane Flight -->
+                <div class="bento-subtile">
+                  <img src="assets/images/about-plane.jpg" alt="Flight Arrangements" loading="lazy">
+                  <div class="bento-tile-overlay">
+                    <span class="mini-tag"><i class="fa-solid fa-plane"></i> Global Flights</span>
+                  </div>
+                  <div class="bento-glass-shine"></div>
+                </div>
+
+              </div>
+
             </div>
 
-            <!-- Card 5: Airplane in sunset flight (Bottom right) -->
-            <div class="collage-card card-plane" data-tilt>
-              <img src="assets/images/about-plane.jpg" alt="Sunset airplane flight" loading="lazy">
-              <div class="card-shine-effect"></div>
+            <!-- Floating Golden Signature Badge -->
+            <div class="showcase-signature-card" data-tilt>
+              <div class="badge-plane-circle">
+                <i class="fa-solid fa-plane-departure"></i>
+              </div>
+              <div class="signature-text-wrap">
+                <span class="signature-brand-name">Shiv Safar Signature</span>
+                <span class="signature-tagline">Making every trip special</span>
+              </div>
+              <div class="signature-stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+
+            <!-- Bottom Luxury Trust Guarantee Banner -->
+            <div class="showcase-bottom-guarantee">
+              <div class="guarantee-item">
+                <i class="fa-solid fa-certificate"></i> <strong>100% Tailored</strong> Itineraries
+              </div>
+              <span class="guarantee-dot">•</span>
+              <div class="guarantee-item">
+                <i class="fa-solid fa-headset"></i> <strong>24/7</strong> Direct Support
+              </div>
             </div>
 
           </div>
@@ -995,10 +1047,10 @@
 
   <!-- ==================== FOOTER ==================== -->
   <footer class="site-footer" id="contact">
-    <!-- Top Organic Wave Divider for Footer matching the screenshot -->
+    <!-- Top Organic Wave Divider for Footer -->
     <div class="footer-top-wave" aria-hidden="true">
-      <svg viewBox="0 0 1440 50" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M 0,50 L 1440,50 L 1440,32 C 1220,12 1040,28 860,18 C 680,8 480,36 320,34 C 220,32 140,2 0,10 Z" fill="#ffffff"/>
+      <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M 0,80 L 1440,80 L 1440,38 C 1080,68 840,68 720,38 C 600,8 360,8 0,38 Z" fill="#ffffff"/>
       </svg>
     </div>
     <div class="container">
