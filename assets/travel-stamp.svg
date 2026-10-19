@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 220" width="220" height="220" fill="none">
+  <defs>
+    <path id="stampCirclePath" d="M 110, 110 m -82, 0 a 82,82 0 1,1 164,0 a 82,82 0 1,1 -164,0" />
+    <path id="stampInnerCircle" d="M 110, 110 m -62, 0 a 62,62 0 1,1 124,0 a 62,62 0 1,1 -124,0" />
+  </defs>
+  
+  <!-- Outer stamp borders -->
+  <circle cx="110" cy="110" r="102" stroke="#d4a340" stroke-width="2" stroke-dasharray="5 3" opacity="0.45"/>
+  <circle cx="110" cy="110" r="94" stroke="#d4a340" stroke-width="1.4" opacity="0.6"/>
+  <circle cx="110" cy="110" r="66" stroke="#d4a340" stroke-width="1.2" stroke-dasharray="3 3" opacity="0.5"/>
+
+  <!-- Curved Text around circle -->
+  <text font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="700" fill="#c59334" letter-spacing="4.5" opacity="0.8">
+    <textPath href="#stampCirclePath" startOffset="0%">
+      TRAVEL • EXPLORE • DISCOVER •
+    </textPath>
+  </text>
+
+  <!-- Inner Center Motif: Mountains, Sun, Palms (Shiv Safar Emblem) -->
+  <g transform="translate(110, 115) scale(0.68)" opacity="0.75" fill="#c59334" stroke="none">
+    <!-- Sun -->
+    <circle cx="5" cy="-25" r="16"/>
+    <!-- Mountains -->
+    <polygon points="-45,5 -20,-30 5,-5 25,-22 50,5"/>
+    <polygon points="-35,5 -15,-20 0,-2 20,-16 45,5" opacity="0.6"/>
+    <!-- Water / Shoreline -->
+    <path d="M -45,10 Q 0,16 45,10" stroke="#c59334" stroke-width="3" fill="none"/>
+    <path d="M -30,16 Q 0,22 30,16" stroke="#c59334" stroke-width="2" fill="none"/>
+  </g>
+  <!-- Palms -->
+  <g transform="translate(138, 92) scale(0.55)" stroke="#c59334" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.8">
+    <path d="M 0, 30 Q 8, 5 0, -18"/>
+    <path d="M 0, -18 Q -16, -32 -28, -20"/>
+    <path d="M 0, -18 Q -18, -42 -8, -44"/>
+    <path d="M 0, -18 Q 4, -46 8, -46"/>
+    <path d="M 0, -18 Q 18, -40 10, -44"/>
+    <path d="M 0, -18 Q 18, -28 26, -16"/>
+  </g>
+</svg>
