@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>International Destinations | Shiv Safar Holidays - Curated Luxury Travel</title>
+  <meta name="description" content="Explore world-class international holiday destinations with Shiv Safar Holidays. Dubai, Bali, Singapore & Cruise, Malaysia, Thailand, Maldives, Switzerland & more with 100% visa assistance and custom itineraries.">
+  <meta name="keywords" content="Shiv Safar Holidays destinations, Dubai tour, Bali vacation, Singapore cruise, Switzerland holiday package, Maldives honeymoon, luxury travel agency Gandhinagar">
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Core Theme & Page Specific CSS -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="destinations.css">
+</head>
+<body>
+
+  <!-- Top Scroll Reading Progress Bar -->
+  <div class="scroll-progress-container" aria-hidden="true">
+    <div class="scroll-progress-bar" id="scrollProgressBar"></div>
+  </div>
+
+  <!-- ==================== TOP NAVIGATION HEADER ==================== -->
+  <header class="site-header" id="header">
+    <div class="nav-container">
+      <!-- Brand Logo -->
+      <a href="index.html#home" class="brand-logo" aria-label="Shiv Safar Holidays Home">
+        <img src="assets/images/logo.png" alt="Shiv Safar Holidays Logo" class="logo-img">
+      </a>
+
+      <!-- Navigation Links -->
+      <nav class="nav-menu" id="navMenu">
+        <a href="index.html#home" class="nav-link">Home</a>
+        <a href="destinations.html" class="nav-link active">Destinations</a>
+        <a href="packages.html" class="nav-link">Holiday Packages</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Right Action Items -->
+      <div class="nav-right">
+        <!-- Interactive Wishlist Heart Button -->
+        <button class="nav-wishlist-btn" id="navWishlistBtn" onclick="openWishlistModal()" aria-label="View Saved Wishlist" title="Your Saved Destinations">
+          <i class="fa-solid fa-heart"></i>
+          <span class="wishlist-count-badge" id="navWishlistCount">0</span>
+        </button>
+
+        <a href="tel:9512165599" class="phone-link">
+          <div class="phone-icon-wrap">
+            <i class="fa-solid fa-phone"></i>
+          </div>
+          <div class="phone-info">
+            <span class="phone-number">9512165599</span>
+            <span class="phone-label">• Call Concierge</span>
+          </div>
+        </a>
+
+        <button class="btn btn-gold btn-header" onclick="openQuoteModal()">
+          Plan My Trip <i class="fa-solid fa-arrow-right"></i>
+        </button>
+
+        <button class="mobile-toggle" id="mobileMenuBtn" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="dest-hero-section">
+      <!-- Ambient Floating Glow Orbs & Grid -->
+      <div class="ambient-glow-orb orb-1" aria-hidden="true"></div>
+      <div class="ambient-glow-orb orb-2" aria-hidden="true"></div>
+      <div class="ambient-glow-orb orb-3" aria-hidden="true"></div>
+      <div class="hero-map-mesh" aria-hidden="true"></div>
+
+      <div class="container dest-hero-container">
+        <!-- Hero Header -->
+        <div class="scroll-reveal">
+          <div class="dest-hero-badge">
+            <i class="fa-solid fa-paper-plane"></i>
+            <span>EXCLUSIVE 2026 WORLD ATLAS • SHIV SAFAR</span>
+          </div>
+
+          <h1 class="dest-hero-title">
+            Where Wanderlust Meets <br>
+            <span class="text-shimmer-gold">Timeless Luxury</span>.
+          </h1>
+
+          <p class="dest-hero-subtitle">
+            Immerse yourself in breathtaking skylines, turquoise lagoons, and storied cultural kingdoms. Every journey is handcrafted with 5-star stays, seamless visa assistance, and round-the-clock holiday concierge.
+          </p>
+        </div>
+
+        <!-- Live Destination Flight & Weather Ticker -->
+        <div class="dest-live-ticker-wrap scroll-reveal delay-1">
+          <div class="dest-live-ticker">
+            <div class="ticker-pill">
+              <span class="dot-live"></span>
+              <strong>Dubai, UAE:</strong> 3h 30m Direct • 28°C Sunny • eVisa in 48h
+            </div>
+            <div class="ticker-pill">
+              <span class="dot-live"></span>
+              <strong>Bali, Indonesia:</strong> 7h 45m • 29°C Tropical • Visa on Arrival
+            </div>
+            <div class="ticker-pill">
+              <span class="dot-live"></span>
+              <strong>Singapore:</strong> 5h 20m • 30°C Warm Breeze • Cruise Sailing Weekly
+            </div>
+            <div class="ticker-pill">
+              <span class="dot-live"></span>
+              <strong>Malaysia:</strong> 5h 10m • 28°C • 100% Visa-Free for Indians
+            </div>
+            <div class="ticker-pill">
+              <span class="dot-live"></span>
+              <strong>Thailand:</strong> 4h 15m • 29°C Coast • Visa-Free Tourism
+            </div>
+            <div class="ticker-pill">
+              <span class="dot-live"></span>
+              <strong>Switzerland:</strong> 9h 30m • 20°C Crisp Alpine • Glacier Express Open
+            </div>
+            <div class="ticker-pill">
+              <span class="dot-live"></span>
+              <strong>Maldives:</strong> 4h 00m • 28°C Lagoon • Free Visa on Arrival
+            </div>
+          </div>
+        </div>
+
+        <!-- Universal Search & Filter Dock -->
+        <div class="dest-search-dock scroll-reveal delay-2">
+          <div class="dock-input-group">
+            <i class="fa-solid fa-magnifying-glass dock-icon"></i>
+            <input type="text" id="dockSearchInput" class="dock-input" placeholder="Search by destination, country, or attraction (e.g. Dubai, Nusa Penida)...">
+          </div>
+
+          <div class="dock-input-group">
+            <i class="fa-solid fa-earth-asia dock-icon"></i>
+            <select id="dockRegionSelect" class="dock-input dock-select">
+              <option value="all">All Continents & Regions</option>
+              <option value="middle-east">Middle East & Emirates</option>
+              <option value="southeast-asia">Southeast Asia</option>
+              <option value="island-escapes">Island Paradises</option>
+              <option value="europe">Europe & Iconic Horizons</option>
+            </select>
+            <i class="fa-solid fa-chevron-down dock-chevron"></i>
+          </div>
+
+          <div class="dock-input-group">
+            <i class="fa-solid fa-heart-pulse dock-icon"></i>
+            <select id="dockVibeSelect" class="dock-input dock-select">
+              <option value="all">Any Travel Style</option>
+              <option value="honeymoon">Romantic / Honeymoon</option>
+              <option value="luxury">Ultra Luxury & Private Villa</option>
+              <option value="family">Family & Theme Parks</option>
+              <option value="beaches">Beaches & Island Hopping</option>
+              <option value="nature">Nature & Scenic Mountains</option>
+              <option value="culture">Culture, History & Temples</option>
+            </select>
+            <i class="fa-solid fa-chevron-down dock-chevron"></i>
+          </div>
+
+          <button class="btn btn-dock-search" onclick="document.getElementById('destinationsMainSection').scrollIntoView({behavior:'smooth'})">
+            <span>Explore</span> <i class="fa-solid fa-arrow-down"></i>
+          </button>
+        </div>
+
+        <!-- Stats Counters Row -->
+        <div class="dest-hero-stats-row scroll-reveal delay-3">
+          <div class="dest-hero-stat">
+            <span class="stat-num">25+</span>
+            <span class="stat-lbl">Global Destinations</span>
+          </div>
+          <div class="dest-hero-stat">
+            <span class="stat-num">100%</span>
+            <span class="stat-lbl">Visa Processing Guarantee</span>
+          </div>
+          <div class="dest-hero-stat">
+            <span class="stat-num">4.9★</span>
+            <span class="stat-lbl">Over 1,200 Verified Reviews</span>
+          </div>
+          <div class="dest-hero-stat">
+            <span class="stat-num">24/7</span>
+            <span class="stat-lbl">On-Ground Concierge</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== SPOTLIGHT DESTINATION OF THE MONTH ==================== -->
+    <section class="spotlight-section">
+      <div class="container">
+        <div class="spotlight-card scroll-reveal">
+          <!-- Spotlight Media -->
+          <div class="spotlight-media-wrap">
+            <img src="assets/images/dest-dubai.jpg" alt="Dubai Luxury Spotlight" class="spotlight-img">
+            <div class="spotlight-overlay"></div>
+            <div class="spotlight-floating-tag">
+              <i class="fa-solid fa-crown"></i> Spotlight of the Month
+            </div>
+            <div class="spotlight-media-content">
+              <div class="spotlight-flight-pill">
+                <i class="fa-solid fa-plane"></i> Just 3h 30m from Mumbai / Delhi • Fast eVisa
+              </div>
+              <h3 style="font-family:var(--font-serif); font-size:2rem; margin-bottom:4px;">Dubai Luxury Horizon</h3>
+              <p style="font-size:0.9rem; color:#cbd5e1;">Burj Khalifa • Red Dune Desert Safari • Luxury Marina Yacht</p>
+            </div>
+          </div>
+
+          <!-- Spotlight Details -->
+          <div class="spotlight-details">
+            <span class="spotlight-subtitle">Featured Masterpiece</span>
+            <h2 class="spotlight-title">Dubai: The Wonder of the Modern World</h2>
+            <p class="spotlight-desc">
+              Experience the unmatched grandeur of the Emirates. From soaring above the clouds at the Burj Khalifa 124th floor to golden desert dune bashing in custom 4x4s and VIP private yacht cruises across Dubai Marina, your luxury escape awaits.
+            </p>
+
+            <div class="spotlight-chips-grid">
+              <div class="spotlight-chip">
+                <div class="spotlight-chip-icon"><i class="fa-regular fa-calendar-check"></i></div>
+                <div class="spotlight-chip-info">
+                  <strong>Best Time</strong>
+                  <span>October to April (Peak Season)</span>
+                </div>
+              </div>
+              <div class="spotlight-chip">
+                <div class="spotlight-chip-icon"><i class="fa-solid fa-passport"></i></div>
+                <div class="spotlight-chip-info">
+                  <strong>Visa Simplicity</strong>
+                  <span>Instant eVisa in 48-72 Hours</span>
+                </div>
+              </div>
+              <div class="spotlight-chip">
+                <div class="spotlight-chip-icon"><i class="fa-solid fa-clock"></i></div>
+                <div class="spotlight-chip-info">
+                  <strong>Ideal Duration</strong>
+                  <span>6 Nights / 7 Days</span>
+                </div>
+              </div>
+              <div class="spotlight-chip">
+                <div class="spotlight-chip-icon"><i class="fa-solid fa-tag"></i></div>
+                <div class="spotlight-chip-info">
+                  <strong>Starting From</strong>
+                  <span style="color:#059669; font-weight:700;">₹75,000 / person</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="spotlight-actions">
+              <button class="btn btn-gold" onclick="openDestinationDetail('dubai')">
+                Explore Dubai Guide <i class="fa-solid fa-arrow-right"></i>
+              </button>
+              <button class="btn btn-outline" style="border:1px solid var(--color-border); color:var(--color-slate);" onclick="openQuoteModal('Dubai Luxury')">
+                Customize Dubai Trip
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== THE GRAND DESTINATIONS GRID ==================== -->
+    <section class="destinations-main-section" id="destinationsMainSection">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-meta-header scroll-reveal">
+          <div class="section-tag-row" style="justify-content:center; display:flex; align-items:center; gap:8px; margin-bottom:8px;">
+            <span class="section-tag">CURATED 2026 HORIZONS</span>
+            <img src="assets/airplane-trail.svg" alt="airplane trail" class="tag-plane-trail" style="height:22px;">
+          </div>
+          <h2 class="section-heading" style="font-size:2.6rem;">Explore Handpicked Global Wonders</h2>
+          <p class="section-subheading" style="margin:0 auto; max-width:680px;">
+            Each destination comes with complete itinerary planning, verified star-rated luxury accommodations, airport transfers and transparent upfront quotes.
+          </p>
+        </div>
+
+        <!-- Interactive Category Filter Radar with Left & Right Scroll Controls -->
+        <div class="filter-radar-wrap scroll-reveal">
+          <button class="filter-nav-arrow filter-nav-arrow-left" id="filterNavLeft" aria-label="Scroll categories left" title="Scroll left">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          
+          <div class="filter-tabs-scroll" id="filterTabsScroll">
+            <button class="filter-pill-btn active" data-region="all">
+              <i class="fa-solid fa-globe"></i>
+              <span>All Horizons</span>
+              <span class="pill-count">10</span>
+            </button>
+            <button class="filter-pill-btn" data-region="middle-east">
+              <i class="fa-solid fa-city"></i>
+              <span>Middle East & Desert Glamour</span>
+              <span class="pill-count">2</span>
+            </button>
+            <button class="filter-pill-btn" data-region="southeast-asia">
+              <i class="fa-solid fa-umbrella-beach"></i>
+              <span>Southeast Asia & Tropics</span>
+              <span class="pill-count">4</span>
+            </button>
+            <button class="filter-pill-btn" data-region="island-escapes">
+              <i class="fa-solid fa-water"></i>
+              <span>Island Paradises & Atolls</span>
+              <span class="pill-count">1</span>
+            </button>
+            <button class="filter-pill-btn" data-region="europe">
+              <i class="fa-solid fa-mountain-sun"></i>
+              <span>Europe & Iconic Landmarks</span>
+              <span class="pill-count">3</span>
+            </button>
+          </div>
+
+          <button class="filter-nav-arrow filter-nav-arrow-right" id="filterNavRight" aria-label="Scroll categories right" title="Scroll right">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+
+        <div class="active-filter-indicator">
+          <span>Showing <strong id="destCountDisplay">10 Destinations</strong></span>
+          <span class="reset-filter-link" id="resetFilterBtn" style="display:none;" onclick="resetAllFilters()">
+            <i class="fa-solid fa-rotate-left"></i> Reset All Filters
+          </span>
+        </div>
+
+        <!-- Dynamic Destination Cards Grid (Injected via destinations.js) -->
+        <div class="destinations-modern-grid" id="destinationsMainGrid">
+          <!-- Dynamically populated -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== "MATCH MY VIBE" INTERACTIVE AI TRAVEL QUIZ ==================== -->
+    <section class="vibe-matcher-section">
+      <div class="container">
+        <div class="vibe-box scroll-reveal">
+          <div style="text-align:center; max-width:700px; margin:0 auto 38px;">
+            <div class="dest-hero-badge" style="background:rgba(212,163,64,0.15); border-color:var(--primary-gold);">
+              <i class="fa-solid fa-wand-magic-sparkles"></i>
+              <span>SMART TRAVEL COMPASS</span>
+            </div>
+            <h2 style="font-family:var(--font-serif); font-size:2.4rem; line-height:1.2; margin-bottom:12px; color:#ffffff;">
+              Find Your Perfect Vacation Match
+            </h2>
+            <p style="color:#cbd5e1; font-size:1rem;">
+              Not sure where to fly next? Select your travel style below and our destination algorithm will recommend the ideal getaway for your group.
+            </p>
+          </div>
+
+          <!-- Step 1: Who is Traveling? -->
+          <div class="quiz-step-title">
+            <span style="width:28px; height:28px; border-radius:50%; background:var(--primary-gold); color:var(--color-navy); display:inline-flex; align-items:center; justify-content:center; font-size:0.85rem; font-weight:800;">1</span>
+            Who is embarking on this journey?
+          </div>
+          <div class="quiz-options-grid">
+            <button class="quiz-opt-btn selected" data-step="traveler" data-value="couple">
+              <i class="fa-solid fa-heart"></i>
+              <span class="quiz-opt-title">Couple / Honeymoon</span>
+              <span class="quiz-opt-desc">Romantic vibes & private retreats</span>
+            </button>
+            <button class="quiz-opt-btn" data-step="traveler" data-value="family">
+              <i class="fa-solid fa-children"></i>
+              <span class="quiz-opt-title">Family with Kids</span>
+              <span class="quiz-opt-desc">Safe, fun theme parks & comfort</span>
+            </button>
+            <button class="quiz-opt-btn" data-step="traveler" data-value="friends">
+              <i class="fa-solid fa-champagne-glasses"></i>
+              <span class="quiz-opt-title">Friends Squad</span>
+              <span class="quiz-opt-desc">Thrills, nightlife & beach clubs</span>
+            </button>
+            <button class="quiz-opt-btn" data-step="traveler" data-value="solo">
+              <i class="fa-solid fa-compass"></i>
+              <span class="quiz-opt-title">Solo Explorer</span>
+              <span class="quiz-opt-desc">Freedom, culture & self-discovery</span>
+            </button>
+          </div>
+
+          <!-- Step 2: What scenery inspires you? -->
+          <div class="quiz-step-title">
+            <span style="width:28px; height:28px; border-radius:50%; background:var(--primary-gold); color:var(--color-navy); display:inline-flex; align-items:center; justify-content:center; font-size:0.85rem; font-weight:800;">2</span>
+            What scenery takes your breath away?
+          </div>
+          <div class="quiz-options-grid">
+            <button class="quiz-opt-btn selected" data-step="scenery" data-value="luxury">
+              <i class="fa-solid fa-city"></i>
+              <span class="quiz-opt-title">Futuristic Skylines & Luxury</span>
+              <span class="quiz-opt-desc">Sky-high dining, shopping & yachts</span>
+            </button>
+            <button class="quiz-opt-btn" data-step="scenery" data-value="beach">
+              <i class="fa-solid fa-water"></i>
+              <span class="quiz-opt-title">Turquoise Atolls & Coral Reefs</span>
+              <span class="quiz-opt-desc">Overwater villas & barefoot sunsets</span>
+            </button>
+            <button class="quiz-opt-btn" data-step="scenery" data-value="nature">
+              <i class="fa-solid fa-mountain"></i>
+              <span class="quiz-opt-title">Snowy Peaks & Glacier Lakes</span>
+              <span class="quiz-opt-desc">Scenic train rides & alpine tranquility</span>
+            </button>
+            <button class="quiz-opt-btn" data-step="scenery" data-value="culture">
+              <i class="fa-solid fa-landmark-dome"></i>
+              <span class="quiz-opt-title">Ancient Shrines & Hot Air Balloons</span>
+              <span class="quiz-opt-desc">Centuries of history & exotic bazaars</span>
+            </button>
+          </div>
+
+          <!-- Step 3: Result Card -->
+          <div class="vibe-result-card" id="vibeResultCard">
+            <!-- Injected dynamically by destinations.js -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SEASONAL TRAVEL COMPASS ==================== -->
+    <section class="season-compass-section">
+      <div class="container">
+        <div class="section-meta-header scroll-reveal">
+          <span class="section-tag">WHEN TO GO WHERE</span>
+          <h2 class="section-heading" style="font-size:2.4rem;">The Seasonal Travel Compass</h2>
+          <p class="section-subheading">
+            Travel at the exact sweet spot of the year. Select any month below to discover optimal weather, seasonal festivals, and temperature conditions.
+          </p>
+        </div>
+
+        <!-- 12 Month Selector -->
+        <div class="month-selector-grid scroll-reveal delay-1">
+          <button class="month-btn" data-month="jan">Jan</button>
+          <button class="month-btn" data-month="feb">Feb</button>
+          <button class="month-btn" data-month="mar">Mar</button>
+          <button class="month-btn" data-month="apr">Apr</button>
+          <button class="month-btn" data-month="may">May</button>
+          <button class="month-btn" data-month="jun">Jun</button>
+          <button class="month-btn" data-month="jul">Jul</button>
+          <button class="month-btn" data-month="aug">Aug</button>
+          <button class="month-btn" data-month="sep">Sep</button>
+          <button class="month-btn active" data-month="oct">Oct</button>
+          <button class="month-btn" data-month="nov">Nov</button>
+          <button class="month-btn" data-month="dec">Dec</button>
+        </div>
+
+        <!-- Recommendations Container -->
+        <div class="month-dest-recommendations" id="seasonalDestContainer">
+          <!-- Populated by destinations.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== DESTINATIONS COMPARISON MATRIX ==================== -->
+    <section class="comparison-section">
+      <div class="container">
+        <div class="section-meta-header scroll-reveal">
+          <span class="section-tag">TRANSPARENT INTELLIGENCE</span>
+          <h2 class="section-heading" style="font-size:2.4rem;">Quick Destination Comparison</h2>
+          <p class="section-subheading">
+            Compare key parameters side-by-side to make the smartest travel decision for your family and budget.
+          </p>
+        </div>
+
+        <div class="comparison-table-wrap scroll-reveal delay-1">
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th>Destination</th>
+                <th>Flight from India</th>
+                <th>Visa Process</th>
+                <th>Starting Price</th>
+                <th>Ideal For</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <div class="comp-dest-cell">
+                    <img src="assets/images/dest-dubai.jpg" alt="Dubai">
+                    <div>
+                      <strong>Dubai, UAE</strong>
+                      <div style="font-size:0.75rem; color:var(--color-muted);">6N / 7D</div>
+                    </div>
+                  </div>
+                </td>
+                <td>3h 30m Direct</td>
+                <td><span class="badge-visa visa-evisa">eVisa in 48h</span></td>
+                <td><strong style="color:var(--color-navy);">₹75,000</strong></td>
+                <td>Couples, Luxury & Families</td>
+                <td><button class="btn btn-gold btn-sm" style="padding:6px 14px; font-size:0.8rem;" onclick="openDestinationDetail('dubai')">View Guide</button></td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="comp-dest-cell">
+                    <img src="assets/images/dest-bali.jpg" alt="Bali">
+                    <div>
+                      <strong>Bali, Indonesia</strong>
+                      <div style="font-size:0.75rem; color:var(--color-muted);">6N / 7D</div>
+                    </div>
+                  </div>
+                </td>
+                <td>7h 45m</td>
+                <td><span class="badge-visa visa-on-arrival">Visa on Arrival</span></td>
+                <td><strong style="color:var(--color-navy);">₹76,999</strong></td>
+                <td>Honeymoon & Private Villa</td>
+                <td><button class="btn btn-gold btn-sm" style="padding:6px 14px; font-size:0.8rem;" onclick="openDestinationDetail('bali')">View Guide</button></td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="comp-dest-cell">
+                    <img src="assets/images/dest-singapore.jpg" alt="Singapore">
+                    <div>
+                      <strong>Singapore & Cruise</strong>
+                      <div style="font-size:0.75rem; color:var(--color-muted);">6D / 5N</div>
+                    </div>
+                  </div>
+                </td>
+                <td>5h 20m Direct</td>
+                <td><span class="badge-visa visa-evisa">Agency eVisa</span></td>
+                <td><strong style="color:var(--color-navy);">₹1,10,000</strong></td>
+                <td>Families, Theme Parks & Cruise</td>
+                <td><button class="btn btn-gold btn-sm" style="padding:6px 14px; font-size:0.8rem;" onclick="openDestinationDetail('singapore')">View Guide</button></td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="comp-dest-cell">
+                    <img src="assets/images/dest-thailand.jpg" alt="Thailand">
+                    <div>
+                      <strong>Thailand (Phuket & BKK)</strong>
+                      <div style="font-size:0.75rem; color:var(--color-muted);">5N / 6D</div>
+                    </div>
+                  </div>
+                </td>
+                <td>4h 15m Direct</td>
+                <td><span class="badge-visa visa-free">Visa-Free Entry</span></td>
+                <td><strong style="color:var(--color-navy);">₹55,000</strong></td>
+                <td>Friends Squad & Island Fun</td>
+                <td><button class="btn btn-gold btn-sm" style="padding:6px 14px; font-size:0.8rem;" onclick="openDestinationDetail('thailand')">View Guide</button></td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="comp-dest-cell">
+                    <img src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=120&q=80" alt="Maldives">
+                    <div>
+                      <strong>Maldives Sanctuary</strong>
+                      <div style="font-size:0.75rem; color:var(--color-muted);">4N / 5D</div>
+                    </div>
+                  </div>
+                </td>
+                <td>4h 00m Direct</td>
+                <td><span class="badge-visa visa-free">Free on Arrival</span></td>
+                <td><strong style="color:var(--color-navy);">₹1,25,000</strong></td>
+                <td>Ultra Luxury & Honeymoon</td>
+                <td><button class="btn btn-gold btn-sm" style="padding:6px 14px; font-size:0.8rem;" onclick="openDestinationDetail('maldives')">View Guide</button></td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="comp-dest-cell">
+                    <img src="https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?auto=format&fit=crop&w=120&q=80" alt="Switzerland">
+                    <div>
+                      <strong>Switzerland Alpine</strong>
+                      <div style="font-size:0.75rem; color:var(--color-muted);">7N / 8D</div>
+                    </div>
+                  </div>
+                </td>
+                <td>9h 30m</td>
+                <td><span class="badge-visa visa-evisa">Schengen Visa</span></td>
+                <td><strong style="color:var(--color-navy);">₹2,45,000</strong></td>
+                <td>Grand Family & Milestones</td>
+                <td><button class="btn btn-gold btn-sm" style="padding:6px 14px; font-size:0.8rem;" onclick="openDestinationDetail('switzerland')">View Guide</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SIGNATURE EXPERIENCES SHOWCASE ==================== -->
+    <section class="signature-experiences-section">
+      <div class="container">
+        <div class="section-meta-header scroll-reveal">
+          <span class="section-tag">UNFORGETTABLE MOMENTS</span>
+          <h2 class="section-heading" style="font-size:2.4rem;">Signature Global Experiences</h2>
+          <p class="section-subheading">
+            Beyond standard sightseeing, Shiv Safar curates authentic moments that linger in your memory forever.
+          </p>
+        </div>
+
+        <div class="sig-exp-grid">
+          <!-- Card 1 -->
+          <div class="sig-exp-card scroll-reveal delay-1" onclick="openQuoteModal('Dubai Private Yacht')">
+            <img src="https://images.unsplash.com/photo-1569263979104-865ab7cd8d17?auto=format&fit=crop&w=800&q=80" alt="Dubai Marina Yacht" class="sig-exp-img" loading="lazy">
+            <div class="sig-exp-overlay">
+              <span class="sig-exp-tag">Dubai, UAE</span>
+              <h3 class="sig-exp-title">Private Yacht Sunset Charter</h3>
+              <p class="sig-exp-desc">Glide along Dubai Marina, Atlantis The Palm and Ain Dubai with private onboard dining.</p>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="sig-exp-card scroll-reveal delay-2" onclick="openQuoteModal('Bali Pool Villa')">
+            <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=800&q=80" alt="Bali Pool Villa" class="sig-exp-img" loading="lazy">
+            <div class="sig-exp-overlay">
+              <span class="sig-exp-tag">Bali, Indonesia</span>
+              <h3 class="sig-exp-title">Floating Breakfast in Private Villa</h3>
+              <p class="sig-exp-desc">Wake up in Seminyak or Ubud to tropical fruits and fresh delicacies served in your pool.</p>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="sig-exp-card scroll-reveal delay-3" onclick="openQuoteModal('Singapore Cruise')">
+            <img src="https://images.unsplash.com/photo-1548574505-5e239809ee19?auto=format&fit=crop&w=800&q=80" alt="Cruise at Sea" class="sig-exp-img" loading="lazy">
+            <div class="sig-exp-overlay">
+              <span class="sig-exp-tag">Singapore</span>
+              <h3 class="sig-exp-title">High Sea Ocean Cruise Liner</h3>
+              <p class="sig-exp-desc">Sail the Malacca Strait with Broadway productions, waterslides, and 24-hour dining.</p>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="sig-exp-card scroll-reveal delay-4" onclick="openQuoteModal('Cappadocia Hot Air Balloon')">
+            <img src="https://images.unsplash.com/photo-1527838832700-5059252407fa?auto=format&fit=crop&w=800&q=80" alt="Cappadocia Balloon" class="sig-exp-img" loading="lazy">
+            <div class="sig-exp-overlay">
+              <span class="sig-exp-tag">Cappadocia, Turkey</span>
+              <h3 class="sig-exp-title">Sunrise Hot Air Balloon Flight</h3>
+              <p class="sig-exp-desc">Drift across surreal fairy chimneys at golden dawn followed by champagne toast.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== TRAVELER TESTIMONIALS ==================== -->
+    <section class="section testimonials-section" style="background:#ffffff;">
+      <div class="container">
+        <div class="section-meta-header scroll-reveal">
+          <span class="section-tag">VERIFIED EXPLORERS</span>
+          <h2 class="section-heading" style="font-size:2.4rem;">Loved by 500+ Indian Families</h2>
+          <p class="section-subheading">Here is what our travelers have to say about their international journeys with Shiv Safar Holidays.</p>
+        </div>
+
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(320px, 1fr)); gap:24px;">
+          <!-- Review 1 -->
+          <div class="testimonial-card scroll-reveal delay-1" style="background:var(--color-bg-warm); border:1px solid var(--color-border); border-radius:var(--radius-lg); padding:28px;">
+            <div style="color:var(--primary-gold); font-size:1.1rem; margin-bottom:12px;">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p style="font-style:italic; color:#334155; line-height:1.6; margin-bottom:20px;">
+              "Our 6-night Dubai tour was planned down to the minute. The Burj Khalifa tickets at prime sunset time, desert dune safari, and Indian dinners arranged every night made my parents so happy. Thank you, Shiv Safar!"
+            </p>
+            <div style="display:flex; align-items:center; gap:14px;">
+              <img src="assets/images/avatar-rahul.jpg" alt="Rahul Mehta" style="width:50px; height:50px; border-radius:50%; object-fit:cover;">
+              <div>
+                <strong style="color:var(--color-navy); font-size:1rem; display:block;">Rahul & Divya Mehta</strong>
+                <span style="font-size:0.8rem; color:var(--color-muted);"><i class="fa-solid fa-circle-check" style="color:#10b981;"></i> Traveled to Dubai • Family Tour</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 2 -->
+          <div class="testimonial-card scroll-reveal delay-2" style="background:var(--color-bg-warm); border:1px solid var(--color-border); border-radius:var(--radius-lg); padding:28px;">
+            <div style="color:var(--primary-gold); font-size:1.1rem; margin-bottom:12px;">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p style="font-style:italic; color:#334155; line-height:1.6; margin-bottom:20px;">
+              "Bali was our dream honeymoon. The private pool villa in Ubud was gorgeous and our driver Ketut was like family. We didn't have to worry about forex, visas, or transfers. 10/10 service!"
+            </p>
+            <div style="display:flex; align-items:center; gap:14px;">
+              <img src="assets/images/avatar-priya.jpg" alt="Priya Shah" style="width:50px; height:50px; border-radius:50%; object-fit:cover;">
+              <div>
+                <strong style="color:var(--color-navy); font-size:1rem; display:block;">Priya & Aniket Shah</strong>
+                <span style="font-size:0.8rem; color:var(--color-muted);"><i class="fa-solid fa-circle-check" style="color:#10b981;"></i> Traveled to Bali • Honeymoon Tour</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 3 -->
+          <div class="testimonial-card scroll-reveal delay-3" style="background:var(--color-bg-warm); border:1px solid var(--color-border); border-radius:var(--radius-lg); padding:28px;">
+            <div style="color:var(--primary-gold); font-size:1.1rem; margin-bottom:12px;">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p style="font-style:italic; color:#334155; line-height:1.6; margin-bottom:20px;">
+              "Taking 5 adults across Singapore, Malaysia and Thailand sounded overwhelming, but Shiv Safar handled our flights, Genting cable cars, and Pattaya coral island smoothly without a single hiccup."
+            </p>
+            <div style="display:flex; align-items:center; gap:14px;">
+              <img src="assets/images/avatar-amit.jpg" alt="Amit Patel" style="width:50px; height:50px; border-radius:50%; object-fit:cover;">
+              <div>
+                <strong style="color:var(--color-navy); font-size:1rem; display:block;">Amit Patel & Family</strong>
+                <span style="font-size:0.8rem; color:var(--color-muted);"><i class="fa-solid fa-circle-check" style="color:#10b981;"></i> Traveled to SG, MY & TH Trio</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CALL TO ACTION BANNER ==================== -->
+    <section class="cta-banner-section" style="position:relative; padding:90px 0; background:linear-gradient(135deg, #091929 0%, #0d233a 100%); color:#fff; overflow:hidden;">
+      <div class="ambient-glow-orb orb-1" style="top:-50px; right:10%;" aria-hidden="true"></div>
+      <div class="container" style="position:relative; z-index:2; text-align:center; max-width:820px;">
+        <span class="dest-hero-badge" style="background:rgba(212,163,64,0.15); border-color:var(--primary-gold);">
+          <i class="fa-solid fa-compass"></i> START YOUR NEXT CHAPTER
+        </span>
+        <h2 style="font-family:var(--font-serif); font-size:clamp(2.2rem, 4vw, 3.2rem); margin-bottom:18px;">
+          Ready to Stamp Your Passport?
+        </h2>
+        <p style="color:#cbd5e1; font-size:1.1rem; line-height:1.6; margin-bottom:34px;">
+          Talk to our senior destination specialist today. We customize daily sightseeing, private transport, and visas tailored to your exact budget and dates.
+        </p>
+
+        <div style="display:flex; gap:16px; justify-content:center; flex-wrap:wrap;">
+          <button class="btn btn-gold btn-hero" onclick="openQuoteModal()">
+            Request Custom Travel Itinerary <i class="fa-solid fa-arrow-right"></i>
+          </button>
+          <a href="https://wa.me/919102185599?text=Hello%20Shiv%20Safar%20Holidays,%20I%20want%20to%20plan%20my%20international%20holiday%20trip!" 
+             target="_blank" rel="noopener" class="btn" style="background:#25d366; color:#ffffff; font-weight:700;">
+            <i class="fa-brands fa-whatsapp"></i> Chat with Holiday Expert
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <!-- ==================== SITE FOOTER (PERFECTED 2026 LUXURY) ==================== -->
+  <footer class="site-footer" id="contact">
+    <div class="container">
+
+      <!-- Trust Badges Strip -->
+      <div class="footer-trust-strip">
+        <div class="footer-trust-item">
+          <div class="footer-trust-icon"><i class="fa-solid fa-award"></i></div>
+          <div class="footer-trust-text">
+            <strong>MSME Certified & Registered</strong>
+            <span>Govt. Verified Tour Operator</span>
+          </div>
+        </div>
+        <div class="footer-trust-item">
+          <div class="footer-trust-icon"><i class="fa-solid fa-star"></i></div>
+          <div class="footer-trust-text">
+            <strong>4.9 / 5 Guest Rating</strong>
+            <span>1,200+ Verified Happy Travelers</span>
+          </div>
+        </div>
+        <div class="footer-trust-item">
+          <div class="footer-trust-icon"><i class="fa-solid fa-headset"></i></div>
+          <div class="footer-trust-text">
+            <strong>24/7 Dedicated Concierge</strong>
+            <span>Direct Tour Manager On-Call</span>
+          </div>
+        </div>
+        <div class="footer-trust-item">
+          <div class="footer-trust-icon"><i class="fa-solid fa-shield-halved"></i></div>
+          <div class="footer-trust-text">
+            <strong>Transparent & Secure</strong>
+            <span>100% Upfront Pricing • No Hidden Fees</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4 Columns Grid -->
+      <div class="footer-grid">
+        <!-- Col 1: Brand -->
+        <div class="footer-col footer-col-brand">
+          <a href="index.html#home" class="footer-logo">
+            <img src="assets/images/logo.png" alt="Shiv Safar Holidays Logo" class="footer-logo-img">
+          </a>
+          <p class="footer-tagline">Making Every Trip Special.</p>
+          <p class="footer-desc">
+            Gandhinagar and Gujarat's most trusted international travel management agency. Designing handcrafted luxury vacations, romantic honeymoons, and seamless cruise voyages.
+          </p>
+          <div class="social-links">
+            <a href="https://instagram.com" target="_blank" rel="noopener" class="social-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://facebook.com" target="_blank" rel="noopener" class="social-btn" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://wa.me/919102185599" target="_blank" rel="noopener" class="social-btn" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="mailto:shivsafarholidays@gmail.com" class="social-btn" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html#home"><i class="fa-solid fa-chevron-right"></i> Home</a></li>
+            <li><a href="destinations.html"><i class="fa-solid fa-chevron-right"></i> Destinations Atlas (2026)</a></li>
+            <li><a href="packages.html"><i class="fa-solid fa-chevron-right"></i> Holiday Packages</a></li>
+            <li><a href="about.html"><i class="fa-solid fa-chevron-right"></i> About Us</a></li>
+            <li><a href="contact.html"><i class="fa-solid fa-chevron-right"></i> Contact Concierge</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Popular Horizons -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Popular Horizons</h4>
+          <ul class="footer-links">
+            <li><a href="javascript:void(0)" onclick="openDestinationDetail('dubai')"><i class="fa-solid fa-chevron-right"></i> Dubai Luxury Package</a></li>
+            <li><a href="javascript:void(0)" onclick="openDestinationDetail('bali')"><i class="fa-solid fa-chevron-right"></i> Bali Villa Retreat</a></li>
+            <li><a href="javascript:void(0)" onclick="openDestinationDetail('singapore')"><i class="fa-solid fa-chevron-right"></i> Singapore & Cruise</a></li>
+            <li><a href="javascript:void(0)" onclick="openDestinationDetail('malaysia')"><i class="fa-solid fa-chevron-right"></i> Malaysia Genting Special</a></li>
+            <li><a href="javascript:void(0)" onclick="openDestinationDetail('thailand')"><i class="fa-solid fa-chevron-right"></i> Thailand Coral Islands</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact Info -->
+        <div class="footer-col footer-col-contact">
+          <h4 class="footer-heading">Visit & Connect</h4>
+          <div class="footer-contact-item" style="display:flex; align-items:flex-start; gap:12px; margin-bottom:14px; font-size:0.88rem; color:#cbd5e1;">
+            <div class="contact-icon" style="color:var(--primary-gold); margin-top:3px;"><i class="fa-solid fa-location-dot"></i></div>
+            <div class="contact-text">
+              <span>D409, Siddharaj Square, Opp. Landmark, Kudasan, Gandhinagar, Gujarat 382421</span>
+            </div>
+          </div>
+          <div class="footer-contact-item" style="display:flex; align-items:flex-start; gap:12px; margin-bottom:14px; font-size:0.88rem; color:#cbd5e1;">
+            <div class="contact-icon" style="color:var(--primary-gold); margin-top:3px;"><i class="fa-solid fa-phone"></i></div>
+            <div class="contact-text">
+              <div><a href="tel:9512165599"><strong>9512165599</strong></a> / <a href="tel:9102185599">9102185599</a></div>
+              <span style="font-size:0.75rem; color:#94a3b8;">Mon - Sun: 9:30 AM to 8:30 PM</span>
+            </div>
+          </div>
+          <div class="footer-contact-item" style="display:flex; align-items:flex-start; gap:12px; margin-bottom:18px; font-size:0.88rem; color:#cbd5e1;">
+            <div class="contact-icon" style="color:var(--primary-gold); margin-top:3px;"><i class="fa-solid fa-envelope"></i></div>
+            <div class="contact-text">
+              <a href="mailto:shivsafarholidays@gmail.com">shivsafarholidays@gmail.com</a>
+            </div>
+          </div>
+          <div class="gov-badges">
+            <span class="msme-badge"><i class="fa-solid fa-award"></i> MSME Certified</span>
+            <span class="msme-badge"><i class="fa-solid fa-shield-check"></i> 100% Verified</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom">
+        <p class="copyright-text">© 2026 Shiv Safar Holidays. All Rights Reserved. Crafted with passion in Gandhinagar, Gujarat.</p>
+        
+        <div class="footer-payment-badges">
+          <span style="font-size:0.75rem; color:#94a3b8; margin-right:4px;">Secure Payments:</span>
+          <i class="fa-brands fa-cc-visa" title="Visa"></i>
+          <i class="fa-brands fa-cc-mastercard" title="Mastercard"></i>
+          <i class="fa-brands fa-amazon-pay" title="UPI & Netbanking"></i>
+        </div>
+
+        <div class="footer-bottom-links">
+          <a href="javascript:void(0)" onclick="openTerms('Privacy Policy')">Privacy Policy</a>
+          <span class="divider">|</span>
+          <a href="javascript:void(0)" onclick="openTerms('Terms & Conditions')">Terms & Conditions</a>
+          <span class="divider">|</span>
+          <a href="contact.html">Get in Touch</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== FLOATING QUICK ACTIONS ==================== -->
+  <button class="floating-btn scroll-top-btn" id="scrollTopBtn" onclick="scrollToTop()" aria-label="Scroll to top">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <a href="https://wa.me/919102185599?text=Hello%20Shiv%20Safar%20Holidays,%20I%20am%20interested%20in%20planning%20an%20international%20holiday%20trip!" 
+     target="_blank" 
+     rel="noopener" 
+     class="floating-btn whatsapp-float-btn" 
+     aria-label="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+    <span class="wa-tooltip">Plan Trip on WhatsApp</span>
+  </a>
+
+  <!-- ==================== MODALS ==================== -->
+  
+  <!-- 1. DESTINATION DETAIL MODAL -->
+  <div class="modal-overlay" id="destDetailModal">
+    <div class="modal-container dest-detail-modal-container">
+      <button class="modal-close-btn" onclick="closeModal('destDetailModal')" aria-label="Close modal">&times;</button>
+      <div id="destDetailModalBody">
+        <!-- Injected dynamically by destinations.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. SAVED WISHLIST MODAL -->
+  <div class="modal-overlay" id="wishlistModal">
+    <div class="modal-container" style="max-width:540px;">
+      <button class="modal-close-btn" onclick="closeModal('wishlistModal')" aria-label="Close modal">&times;</button>
+      <div id="wishlistModalContent">
+        <!-- Injected dynamically by destinations.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. QUOTE / ENQUIRY MODAL -->
+  <div class="modal-overlay" id="quoteModal">
+    <div class="modal-container">
+      <button class="modal-close-btn" onclick="closeModal('quoteModal')" aria-label="Close modal">&times;</button>
+      <div class="modal-header">
+        <span class="modal-tag">CUSTOM TRAVEL PLANNING</span>
+        <h3 class="modal-title">Get Your Free Travel Quote</h3>
+        <p class="modal-sub">Tell us where you want to go and our travel specialists will curate the best itinerary for you.</p>
+      </div>
+      <form id="quoteForm" onsubmit="submitQuoteForm(event)">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="quoteName">Full Name *</label>
+            <input type="text" id="quoteName" placeholder="e.g. Rahul Mehta" required>
+          </div>
+          <div class="form-group">
+            <label for="quotePhone">Phone / WhatsApp Number *</label>
+            <input type="tel" id="quotePhone" placeholder="e.g. 9876543210" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="quoteEmail">Email Address</label>
+            <input type="email" id="quoteEmail" placeholder="e.g. rahul@example.com">
+          </div>
+          <div class="form-group">
+            <label for="quoteDest">Destination *</label>
+            <select id="quoteDest" required>
+              <option value="" disabled selected>Select Destination</option>
+              <option value="Dubai">Dubai, UAE</option>
+              <option value="Bali">Bali, Indonesia</option>
+              <option value="Singapore & Cruise">Singapore & Cruise</option>
+              <option value="Malaysia">Malaysia</option>
+              <option value="Thailand">Thailand</option>
+              <option value="Maldives">Maldives</option>
+              <option value="Switzerland">Switzerland</option>
+              <option value="Vietnam">Vietnam</option>
+              <option value="Japan">Japan</option>
+              <option value="Turkey">Turkey</option>
+              <option value="Other">Other International Destination</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="quoteDate">Expected Travel Date</label>
+            <input type="date" id="quoteDate">
+          </div>
+          <div class="form-group">
+            <label for="quoteGuests">Number of Guests</label>
+            <select id="quoteGuests">
+              <option value="1 Adult">1 Solo Traveler</option>
+              <option value="2 Adults (Couple)" selected>2 Adults (Couple)</option>
+              <option value="Family (3-4)">Family (3-4 Guests)</option>
+              <option value="Group 5+">Group (5+ Guests)</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="quoteMsg">Special Requirements or Budget (Optional)</label>
+          <textarea id="quoteMsg" rows="3" placeholder="Tell us preferences: 4-star/5-star stays, vegetarian/Jain food, specific flight timings..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-gold btn-submit-full">
+          Submit Enquiry & Get Itinerary <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- 4. TOAST NOTIFICATION -->
+  <div class="toast-notify" id="toastNotify">
+    <div class="toast-icon"><i class="fa-solid fa-circle-check"></i></div>
+    <div class="toast-message" id="toastMsg">Enquiry received successfully! Our travel specialist will call you shortly.</div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="destinations.js"></script>
+</body>
+</html>

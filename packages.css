@@ -1,0 +1,1105 @@
+/* ==========================================================================
+   SHIV SAFAR HOLIDAYS - HOLIDAY PACKAGES HUB (2026 ULTRA-LUXURY EDITION)
+   Aesthetic: Midnight Blue, Champagne Gold Shimmer, High-Fashion Editorial,
+              Airy Layout, Crisp White Typography, Rich Micro-Animations
+   NO CUTTING LINES • ZERO CLUTTER • 100% RESPONSIVE ELEGANCE
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   0. GLOBAL ROOT & PAGE CANVAS
+   -------------------------------------------------------------------------- */
+body {
+  background-color: #06101a;
+  color: #e2e8f0;
+  font-family: var(--font-jakarta, 'Plus Jakarta Sans', sans-serif);
+  overflow-x: hidden;
+}
+
+/* Background Atmosphere */
+main {
+  background: 
+    radial-gradient(circle at 50% 0%, rgba(212, 163, 64, 0.08) 0%, transparent 45%),
+    radial-gradient(circle at 90% 25%, rgba(14, 165, 233, 0.05) 0%, transparent 40%),
+    radial-gradient(circle at 10% 65%, rgba(212, 163, 64, 0.06) 0%, transparent 40%),
+    #06101a;
+}
+
+/* Section Header Mastery */
+.section-head-center {
+  text-align: center;
+  max-width: 840px;
+  margin: 0 auto 55px;
+  position: relative;
+  z-index: 2;
+}
+
+.section-head-center .section-title,
+.spotlight-section .section-title,
+.ribbon-section .section-title,
+.bento-catalog-section .section-title,
+.customizer-section .section-title {
+  color: #ffffff !important;
+  font-family: var(--font-playfair, 'Playfair Display', serif);
+  font-size: 2.85rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 14px;
+  letter-spacing: -0.5px;
+  text-shadow: 0 4px 25px rgba(0, 0, 0, 0.85);
+}
+
+.section-head-center .sub-title,
+.ribbon-section .sub-title,
+.bento-catalog-section .sub-title,
+.customizer-section .sub-title {
+  color: #cbd5e1 !important;
+  font-size: 1.1rem;
+  line-height: 1.75;
+  margin: 0 auto;
+  opacity: 1 !important;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+  max-width: 680px;
+}
+
+/* Gold Gradient Accents */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #fae8b4 0%, #d4a340 50%, #fef3c7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+/* --------------------------------------------------------------------------
+   1. HERO SECTION & FILTER COMMAND BAR (PRESERVED AS REQUESTED)
+   -------------------------------------------------------------------------- */
+.packages-hero {
+  position: relative;
+  min-height: 65vh;
+  padding: 165px 24px 85px;
+  background: 
+    linear-gradient(180deg, 
+      rgba(6, 16, 26, 0.70) 0%, 
+      rgba(6, 16, 26, 0.55) 50%, 
+      rgba(6, 16, 26, 0.92) 85%, 
+      #06101a 100%
+    ),
+    url('assets/images/dream-holiday-bg.jpg') center center / cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-bottom: 1px solid rgba(212, 163, 64, 0.2);
+  overflow: hidden;
+}
+
+.packages-hero-container {
+  position: relative;
+  z-index: 2;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.packages-hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(10, 25, 41, 0.85);
+  border: 1px solid rgba(212, 163, 64, 0.45);
+  color: var(--primary-gold-light, #f0ca7d);
+  padding: 8px 24px;
+  border-radius: 50px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  backdrop-filter: blur(14px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 0 0 16px rgba(212, 163, 64, 0.2);
+}
+
+.packages-hero-title {
+  font-family: var(--font-playfair, 'Playfair Display', serif);
+  font-size: 4rem;
+  font-weight: 800;
+  line-height: 1.15;
+  color: #ffffff;
+  margin-bottom: 18px;
+  letter-spacing: -0.5px;
+  text-shadow: 0 4px 25px rgba(0, 0, 0, 0.85);
+}
+
+.packages-hero-desc {
+  font-size: 1.15rem;
+  line-height: 1.75;
+  color: #e2e8f0;
+  max-width: 780px;
+  margin: 0 auto 30px;
+  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.9);
+}
+
+/* Interactive Filter Command Bar */
+.packages-filter-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  background: rgba(10, 25, 41, 0.88);
+  border: 1px solid rgba(212, 163, 64, 0.35);
+  padding: 10px 14px;
+  border-radius: 50px;
+  backdrop-filter: blur(16px);
+  max-width: 900px;
+  margin: 0 auto;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+}
+
+.filter-pill-btn {
+  background: transparent;
+  border: 1px solid transparent;
+  color: #cbd5e1;
+  font-family: inherit;
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 9px 20px;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.filter-pill-btn:hover {
+  color: #ffffff;
+  background: rgba(212, 163, 64, 0.15);
+  border-color: rgba(212, 163, 64, 0.35);
+}
+
+.filter-pill-btn.active {
+  background: linear-gradient(135deg, #d4a340 0%, #b88628 100%);
+  color: #06101a;
+  font-weight: 700;
+  border-color: transparent;
+  box-shadow: 0 6px 18px rgba(212, 163, 64, 0.4);
+}
+
+/* --------------------------------------------------------------------------
+   2. SECTION 1: CROWN JEWEL SPOTLIGHT (DUBAI EXPEDITION)
+   -------------------------------------------------------------------------- */
+.spotlight-section {
+  padding: 100px 0;
+  position: relative;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.spotlight-card-master {
+  background: linear-gradient(145deg, rgba(14, 30, 48, 0.85) 0%, rgba(8, 20, 33, 0.96) 100%);
+  border: 1.5px solid rgba(212, 163, 64, 0.35);
+  border-radius: 28px;
+  padding: 45px;
+  box-shadow: 0 25px 65px rgba(0, 0, 0, 0.6), 0 0 40px rgba(212, 163, 64, 0.1) inset;
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 50px;
+  align-items: center;
+  transition: all 0.4s ease;
+  backdrop-filter: blur(16px);
+}
+
+.spotlight-card-master:hover {
+  border-color: rgba(212, 163, 64, 0.55);
+  box-shadow: 0 32px 80px rgba(0, 0, 0, 0.7), 0 0 50px rgba(212, 163, 64, 0.15) inset;
+}
+
+/* Media Gallery Stage */
+.spotlight-media-wrap {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.55);
+  border: 1px solid rgba(212, 163, 64, 0.3);
+}
+
+.spotlight-main-img {
+  width: 100%;
+  height: 440px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.spotlight-media-wrap:hover .spotlight-main-img {
+  transform: scale(1.04);
+}
+
+.spotlight-media-badges {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  right: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  pointer-events: none;
+}
+
+.badge-luxury-seal {
+  background: rgba(6, 16, 26, 0.9);
+  border: 1px solid rgba(212, 163, 64, 0.45);
+  padding: 7px 16px;
+  border-radius: 30px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #f0ca7d;
+  backdrop-filter: blur(10px);
+}
+
+.badge-pdf-tag {
+  background: rgba(220, 38, 38, 0.9);
+  color: #ffffff;
+  padding: 7px 14px;
+  border-radius: 30px;
+  font-size: 0.76rem;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Thumbnails */
+.spotlight-thumb-strip {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.spotlight-thumb-item {
+  height: 75px;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+  background: #0b1a2b;
+}
+
+.spotlight-thumb-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.spotlight-thumb-item.active,
+.spotlight-thumb-item:hover {
+  border-color: #d4a340;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(212, 163, 64, 0.45);
+}
+
+/* Right Editorial Content */
+.spotlight-editorial {
+  display: flex;
+  flex-direction: column;
+}
+
+.spotlight-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #d4a340;
+  margin-bottom: 10px;
+}
+
+.spotlight-main-title {
+  font-family: var(--font-playfair, 'Playfair Display', serif);
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.18;
+  margin-bottom: 8px;
+}
+
+.spotlight-duration-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: #f0ca7d;
+  margin-bottom: 18px;
+}
+
+.spotlight-pricing-row {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 18px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.spotlight-price-figure {
+  font-family: var(--font-playfair, 'Playfair Display', serif);
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1;
+}
+
+.spotlight-price-figure span {
+  color: #f0ca7d;
+}
+
+.spotlight-price-qualifier {
+  font-size: 0.84rem;
+  color: #94a3b8;
+}
+
+.spotlight-story-desc {
+  font-size: 0.96rem;
+  line-height: 1.7;
+  color: #cbd5e1;
+  margin-bottom: 24px;
+}
+
+/* 2-Column Curated Highlights Grid (Elegant Micro-Cards) */
+.spotlight-highlights-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
+.highlight-mini-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(212, 163, 64, 0.2);
+  border-radius: 12px;
+  padding: 10px 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.88rem;
+  color: #e2e8f0;
+  transition: all 0.25s ease;
+}
+
+.highlight-mini-card:hover {
+  background: rgba(212, 163, 64, 0.08);
+  border-color: rgba(212, 163, 64, 0.4);
+  transform: translateY(-2px);
+}
+
+.highlight-mini-card i {
+  color: #d4a340;
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+/* Action Buttons */
+.spotlight-btn-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.btn-luxury-gold {
+  background: linear-gradient(135deg, #d4a340 0%, #b88628 100%);
+  color: #06101a !important;
+  font-weight: 700;
+  font-size: 0.92rem;
+  padding: 13px 26px;
+  border-radius: 50px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  box-shadow: 0 10px 25px rgba(212, 163, 64, 0.35);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  border: none;
+  cursor: pointer;
+}
+
+.btn-luxury-gold:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 30px rgba(212, 163, 64, 0.5);
+  color: #000000 !important;
+}
+
+.btn-pdf-luxury {
+  background: rgba(220, 38, 38, 0.15);
+  border: 1px solid rgba(220, 38, 38, 0.45);
+  color: #fca5a5 !important;
+  padding: 12px 22px;
+  border-radius: 50px;
+  font-size: 0.88rem;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-pdf-luxury:hover {
+  background: #dc2626;
+  color: #ffffff !important;
+  border-color: #dc2626;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(220, 38, 38, 0.45);
+}
+
+/* --------------------------------------------------------------------------
+   3. SECTION 2: HIGH SEAS CRUISES & GRAND ODYSSEYS (NO CUTTING LINES!)
+   -------------------------------------------------------------------------- */
+.ribbon-section {
+  padding: 105px 0;
+  position: relative;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.voyage-card-grand {
+  background: linear-gradient(145deg, rgba(14, 30, 48, 0.85) 0%, rgba(8, 20, 33, 0.98) 100%);
+  border: 1.5px solid rgba(212, 163, 64, 0.35);
+  border-radius: 28px;
+  padding: 40px;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6);
+  margin-bottom: 45px;
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: 45px;
+  align-items: center;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(16px);
+}
+
+.voyage-card-grand:hover {
+  transform: translateY(-5px);
+  border-color: rgba(212, 163, 64, 0.6);
+  box-shadow: 0 32px 75px rgba(0, 0, 0, 0.7), 0 0 35px rgba(212, 163, 64, 0.15) inset;
+}
+
+/* Left Image Box */
+.voyage-media-box {
+  position: relative;
+  height: 380px;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid rgba(212, 163, 64, 0.25);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.45);
+}
+
+.voyage-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.voyage-card-grand:hover .voyage-img {
+  transform: scale(1.06);
+}
+
+.voyage-media-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(6, 16, 26, 0.1) 0%, rgba(6, 16, 26, 0.88) 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.voyage-overlay-tag {
+  background: rgba(6, 16, 26, 0.88);
+  border: 1px solid rgba(212, 163, 64, 0.45);
+  color: #f0ca7d;
+  padding: 7px 16px;
+  border-radius: 30px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  width: fit-content;
+  backdrop-filter: blur(8px);
+}
+
+.voyage-price-badge-overlay {
+  background: rgba(6, 16, 26, 0.92);
+  border: 1px solid rgba(212, 163, 64, 0.5);
+  border-radius: 16px;
+  padding: 12px 18px;
+  backdrop-filter: blur(10px);
+  width: fit-content;
+}
+
+.voyage-price-badge-overlay strong {
+  display: block;
+  font-family: var(--font-playfair, 'Playfair Display', serif);
+  font-size: 1.8rem;
+  color: #f0ca7d;
+  line-height: 1;
+}
+
+.voyage-price-badge-overlay span {
+  font-size: 0.72rem;
+  color: #94a3b8;
+  display: block;
+  margin-top: 2px;
+}
+
+/* Right Content Area */
+.voyage-info-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.voyage-title {
+  font-family: var(--font-playfair, 'Playfair Display', serif);
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.2;
+  margin-bottom: 6px;
+}
+
+.voyage-subtitle {
+  font-size: 0.92rem;
+  color: #cbd5e1;
+  margin-bottom: 22px;
+}
+
+/* ULTRA-CLEAN ROUTE RIBBON (NO CUTTING LINES!) */
+.voyage-route-ribbon {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(212, 163, 64, 0.25);
+  border-radius: 16px;
+  padding: 14px 18px;
+  margin-bottom: 24px;
+}
+
+.route-ribbon-title {
+  font-size: 0.74rem;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #d4a340;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.route-ribbon-flow {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.route-waypoint {
+  background: rgba(10, 25, 41, 0.8);
+  border: 1px solid rgba(212, 163, 64, 0.2);
+  color: #ffffff;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.25s ease;
+}
+
+.route-waypoint i {
+  color: #d4a340;
+  font-size: 0.85rem;
+}
+
+.route-waypoint:hover {
+  background: rgba(212, 163, 64, 0.15);
+  border-color: rgba(212, 163, 64, 0.5);
+  transform: translateY(-2px);
+}
+
+.route-separator {
+  color: #d4a340;
+  font-size: 0.75rem;
+  opacity: 0.8;
+}
+
+/* Curated Bullets */
+.voyage-feature-bullets {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 26px;
+}
+
+.voyage-bullet {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.9rem;
+  color: #e2e8f0;
+}
+
+.voyage-bullet i {
+  color: #d4a340;
+  font-size: 0.95rem;
+  flex-shrink: 0;
+}
+
+/* Actions */
+.voyage-actions-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+/* --------------------------------------------------------------------------
+   4. SECTION 3: SIGNATURE HORIZONS CATALOG (BALI, THAILAND, MALAYSIA)
+   -------------------------------------------------------------------------- */
+.bento-catalog-section {
+  padding: 105px 0;
+  position: relative;
+}
+
+.catalog-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.catalog-card {
+  background: linear-gradient(180deg, rgba(14, 30, 48, 0.7) 0%, rgba(8, 20, 33, 0.95) 100%);
+  border: 1.5px solid rgba(212, 163, 64, 0.22);
+  border-radius: 24px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(16px);
+}
+
+.catalog-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(212, 163, 64, 0.55);
+  box-shadow: 0 28px 65px rgba(0, 0, 0, 0.65), 0 0 30px rgba(212, 163, 64, 0.15) inset;
+}
+
+.catalog-media {
+  position: relative;
+  height: 250px;
+  overflow: hidden;
+}
+
+.catalog-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.catalog-card:hover .catalog-media img {
+  transform: scale(1.08);
+}
+
+.catalog-media-overlay {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  right: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  pointer-events: none;
+}
+
+.catalog-pill {
+  background: rgba(6, 16, 26, 0.85);
+  border: 1px solid rgba(212, 163, 64, 0.4);
+  padding: 5px 14px;
+  border-radius: 30px;
+  font-size: 0.74rem;
+  font-weight: 700;
+  color: #f0ca7d;
+  backdrop-filter: blur(8px);
+}
+
+.catalog-wishlist-btn {
+  pointer-events: auto;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: rgba(6, 16, 26, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #cbd5e1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.catalog-wishlist-btn:hover,
+.catalog-wishlist-btn.active {
+  background: #e11d48;
+  border-color: #e11d48;
+  color: #ffffff;
+  transform: scale(1.1);
+}
+
+.catalog-card-body {
+  padding: 26px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.catalog-card-title {
+  font-family: var(--font-playfair, 'Playfair Display', serif);
+  font-size: 1.55rem;
+  color: #ffffff;
+  font-weight: 700;
+  line-height: 1.25;
+  margin-bottom: 6px;
+}
+
+.catalog-card-duration {
+  font-size: 0.8rem;
+  color: #d4a340;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  margin-bottom: 18px;
+  display: block;
+}
+
+.catalog-bullet-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  flex-grow: 1;
+}
+
+.catalog-bullet-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 0.86rem;
+  color: #cbd5e1;
+  line-height: 1.45;
+}
+
+.catalog-bullet-list li i {
+  color: #d4a340;
+  margin-top: 3px;
+  font-size: 0.85rem;
+  flex-shrink: 0;
+}
+
+.catalog-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 18px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  margin-top: auto;
+}
+
+.catalog-price-tag strong {
+  font-family: var(--font-playfair, 'Playfair Display', serif);
+  font-size: 1.65rem;
+  color: #f0ca7d;
+  line-height: 1;
+  display: block;
+}
+
+.catalog-price-tag span {
+  font-size: 0.72rem;
+  color: #94a3b8;
+  display: block;
+  margin-top: 2px;
+}
+
+/* --------------------------------------------------------------------------
+   5. SECTION 4: THE PRIVATE TRAVEL STUDIO & TRIP CUSTOMIZER
+   -------------------------------------------------------------------------- */
+.customizer-section {
+  padding: 105px 0;
+  position: relative;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.customizer-studio-card {
+  max-width: 1080px;
+  margin: 0 auto;
+  background: linear-gradient(145deg, rgba(14, 30, 48, 0.9) 0%, rgba(6, 16, 26, 0.98) 100%);
+  border: 1.5px solid rgba(212, 163, 64, 0.35);
+  border-radius: 28px;
+  padding: 45px;
+  box-shadow: 0 30px 75px rgba(0, 0, 0, 0.65), 0 0 45px rgba(212, 163, 64, 0.1) inset;
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 45px;
+  align-items: center;
+  backdrop-filter: blur(16px);
+}
+
+.studio-preview-box {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid rgba(212, 163, 64, 0.3);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.5);
+  height: 380px;
+}
+
+.studio-preview-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s ease;
+}
+
+.studio-preview-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 0%, rgba(6, 16, 26, 0.92) 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 22px;
+}
+
+.studio-preview-caption {
+  font-family: var(--font-playfair, 'Playfair Display', serif);
+  font-size: 1.4rem;
+  color: #ffffff;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.studio-preview-sub {
+  font-size: 0.8rem;
+  color: #f0ca7d;
+}
+
+/* Studio Form Controls */
+.studio-form-box h3 {
+  font-family: var(--font-playfair, 'Playfair Display', serif);
+  font-size: 2.1rem;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.studio-form-box p {
+  font-size: 0.92rem;
+  color: #cbd5e1;
+  margin-bottom: 24px;
+}
+
+.studio-fields-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.studio-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.studio-field label {
+  font-size: 0.74rem;
+  font-weight: 800;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: #d4a340;
+}
+
+.studio-field select {
+  width: 100%;
+  background: rgba(6, 16, 26, 0.92);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: #ffffff;
+  padding: 11px 14px;
+  border-radius: 12px;
+  font-family: inherit;
+  font-size: 0.88rem;
+  cursor: pointer;
+  transition: border-color 0.25s ease;
+}
+
+.studio-field select:focus {
+  outline: none;
+  border-color: #d4a340;
+}
+
+.studio-estimate-banner {
+  background: rgba(212, 163, 64, 0.08);
+  border: 1px solid rgba(212, 163, 64, 0.3);
+  border-radius: 16px;
+  padding: 18px 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.estimate-numbers h4 {
+  font-size: 0.76rem;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 2px;
+}
+
+.estimate-numbers span {
+  font-family: var(--font-playfair, 'Playfair Display', serif);
+  font-size: 2.1rem;
+  font-weight: 800;
+  color: #f0ca7d;
+}
+
+/* --------------------------------------------------------------------------
+   6. RESPONSIVE PERFECTION FOR LAPTOP & MOBILE
+   -------------------------------------------------------------------------- */
+@media (max-width: 1200px) {
+  .spotlight-card-master {
+    grid-template-columns: 1fr;
+    gap: 35px;
+    padding: 35px;
+  }
+  .voyage-card-grand {
+    grid-template-columns: 1fr;
+    gap: 35px;
+    padding: 35px;
+  }
+  .catalog-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .customizer-studio-card {
+    grid-template-columns: 1fr;
+    gap: 35px;
+    padding: 35px;
+  }
+}
+
+@media (max-width: 992px) {
+  .packages-hero-title {
+    font-size: 2.8rem;
+  }
+  .section-head-center .section-title,
+  .spotlight-section .section-title,
+  .ribbon-section .section-title,
+  .bento-catalog-section .section-title,
+  .customizer-section .section-title {
+    font-size: 2.3rem !important;
+  }
+  .voyage-media-box {
+    height: 300px;
+  }
+  .studio-preview-box {
+    height: 280px;
+  }
+}
+
+@media (max-width: 768px) {
+  .packages-hero {
+    padding: 125px 16px 50px;
+  }
+  .packages-hero-title {
+    font-size: 2.1rem;
+  }
+  .section-head-center .section-title,
+  .spotlight-section .section-title,
+  .ribbon-section .section-title,
+  .bento-catalog-section .section-title,
+  .customizer-section .section-title {
+    font-size: 1.95rem !important;
+  }
+  .packages-filter-bar {
+    border-radius: 20px;
+    padding: 8px;
+  }
+  .filter-pill-btn {
+    padding: 7px 14px;
+    font-size: 0.78rem;
+  }
+  .spotlight-card-master {
+    padding: 22px 16px;
+    border-radius: 20px;
+  }
+  .spotlight-main-img {
+    height: 280px;
+  }
+  .spotlight-thumb-strip {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+  }
+  .spotlight-thumb-item {
+    height: 60px;
+  }
+  .spotlight-main-title {
+    font-size: 1.9rem;
+  }
+  .spotlight-highlights-grid {
+    grid-template-columns: 1fr;
+  }
+  .voyage-card-grand {
+    padding: 22px 16px;
+    border-radius: 20px;
+  }
+  .voyage-media-box {
+    height: 240px;
+  }
+  .voyage-title {
+    font-size: 1.75rem;
+  }
+  .route-ribbon-flow {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .route-separator {
+    display: none;
+  }
+  .catalog-cards-grid {
+    grid-template-columns: 1fr;
+  }
+  .customizer-studio-card {
+    padding: 22px 16px;
+  }
+  .studio-preview-box {
+    height: 220px;
+  }
+  .studio-fields-grid {
+    grid-template-columns: 1fr;
+  }
+  .studio-estimate-banner {
+    flex-direction: column;
+    text-align: center;
+  }
+  .studio-estimate-banner .btn-luxury-gold {
+    width: 100%;
+    justify-content: center;
+  }
+}

@@ -34,32 +34,34 @@
         <a href="#home" class="nav-link active">Home</a>
         
         <div class="nav-dropdown">
-          <a href="#destinations" class="nav-link">
+          <a href="destinations.html" class="nav-link">
             Destinations <i class="fa-solid fa-chevron-down nav-arrow"></i>
           </a>
           <div class="dropdown-menu">
-            <a href="#destinations" onclick="highlightDestination('Dubai')"><i class="fa-solid fa-city"></i> Dubai</a>
-            <a href="#destinations" onclick="highlightDestination('Bali')"><i class="fa-solid fa-umbrella-beach"></i> Bali</a>
-            <a href="#destinations" onclick="highlightDestination('Singapore')"><i class="fa-solid fa-building-columns"></i> Singapore</a>
-            <a href="#destinations" onclick="highlightDestination('Malaysia')"><i class="fa-solid fa-monument"></i> Malaysia</a>
-            <a href="#destinations" onclick="highlightDestination('Thailand')"><i class="fa-solid fa-water"></i> Thailand</a>
+            <a href="destinations.html#dubai"><i class="fa-solid fa-city"></i> Dubai, UAE</a>
+            <a href="destinations.html#bali"><i class="fa-solid fa-umbrella-beach"></i> Bali, Indonesia</a>
+            <a href="destinations.html#singapore"><i class="fa-solid fa-ship"></i> Singapore & Cruise</a>
+            <a href="destinations.html#malaysia"><i class="fa-solid fa-monument"></i> Malaysia</a>
+            <a href="destinations.html#thailand"><i class="fa-solid fa-water"></i> Thailand</a>
+            <a href="destinations.html" style="font-weight:700; color:var(--primary-gold-dark); border-top:1px solid #f1ece4;"><i class="fa-solid fa-globe"></i> View All Destinations (2026 Atlas) &rarr;</a>
           </div>
         </div>
 
         <div class="nav-dropdown">
-          <a href="#packages" class="nav-link">
+          <a href="packages.html" class="nav-link">
             Holiday Packages <i class="fa-solid fa-chevron-down nav-arrow"></i>
           </a>
           <div class="dropdown-menu">
-            <a href="#packages" onclick="openPackageModal('dubai')"><i class="fa-solid fa-gem"></i> Dubai Luxury (6N/7D)</a>
-            <a href="#packages" onclick="openPackageModal('singapore')"><i class="fa-solid fa-ship"></i> Singapore & Cruise (6D/5N)</a>
-            <a href="#packages" onclick="openPackageModal('asia')"><i class="fa-solid fa-globe-asia"></i> SG, Malaysia & Thailand (10N/11D)</a>
-            <a href="#packages" onclick="openPackageModal('bali')"><i class="fa-solid fa-spa"></i> Bali Tropical Escape (6N/7D)</a>
+            <a href="packages.html"><i class="fa-solid fa-gem"></i> Dubai Luxury (6N/7D)</a>
+            <a href="packages.html"><i class="fa-solid fa-ship"></i> Singapore & Cruise (6D/5N)</a>
+            <a href="packages.html"><i class="fa-solid fa-globe-asia"></i> SG, Malaysia & Thailand (10N/11D)</a>
+            <a href="packages.html"><i class="fa-solid fa-spa"></i> Bali Tropical Escape (6N/7D)</a>
+            <a href="packages.html" style="font-weight:700; color:var(--primary-gold-dark); border-top:1px solid #f1ece4;"><i class="fa-solid fa-plane-departure"></i> Explore All Packages (2026 Hub) &rarr;</a>
           </div>
         </div>
 
-        <a href="#about" class="nav-link">About Us</a>
-        <a href="#contact" class="nav-link">Contact</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="contact.html" class="nav-link">Contact</a>
       </nav>
 
       <!-- Right Action Items -->
@@ -275,9 +277,9 @@
             <h2 class="section-heading">Explore Our Top Destinations</h2>
             <p class="section-subheading">From breathtaking cityscapes to tropical escapes, discover destinations that inspire.</p>
           </div>
-          <button class="btn-outline-pill" onclick="openQuoteModal('All Destinations')">
-            View All Destinations <i class="fa-solid fa-arrow-right"></i>
-          </button>
+          <a href="destinations.html" class="btn-outline-pill">
+            Explore All Destinations (2026 Atlas) <i class="fa-solid fa-arrow-right"></i>
+          </a>
         </div>
 
         <!-- 5 Destination Cards Grid -->
@@ -1046,92 +1048,99 @@
   </main>
 
   <!-- ==================== FOOTER ==================== -->
+  <!-- ==================== SITE FOOTER (PERFECTED 2026 LUXURY) ==================== -->
   <footer class="site-footer" id="contact">
-    <!-- Top Organic Wave Divider for Footer -->
-    <div class="footer-top-wave" aria-hidden="true">
-      <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M 0,80 L 1440,80 L 1440,38 C 1080,68 840,68 720,38 C 600,8 360,8 0,38 Z" fill="#ffffff"/>
-      </svg>
-    </div>
     <div class="container">
+
+      <!-- Trust Badges Strip -->
+      <div class="footer-trust-strip">
+        <div class="footer-trust-item">
+          <div class="footer-trust-icon"><i class="fa-solid fa-award"></i></div>
+          <div class="footer-trust-text">
+            <strong>MSME Certified & Registered</strong>
+            <span>Govt. Verified Tour Operator</span>
+          </div>
+        </div>
+        <div class="footer-trust-item">
+          <div class="footer-trust-icon"><i class="fa-solid fa-star"></i></div>
+          <div class="footer-trust-text">
+            <strong>4.9 / 5 Guest Rating</strong>
+            <span>1,200+ Verified Happy Travelers</span>
+          </div>
+        </div>
+        <div class="footer-trust-item">
+          <div class="footer-trust-icon"><i class="fa-solid fa-headset"></i></div>
+          <div class="footer-trust-text">
+            <strong>24/7 Dedicated Concierge</strong>
+            <span>Direct Tour Manager On-Call</span>
+          </div>
+        </div>
+        <div class="footer-trust-item">
+          <div class="footer-trust-icon"><i class="fa-solid fa-shield-halved"></i></div>
+          <div class="footer-trust-text">
+            <strong>Transparent & Secure</strong>
+            <span>100% Upfront Pricing • No Hidden Fees</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4 Columns Grid -->
       <div class="footer-grid">
-        
-        <!-- Column 1: Brand Info -->
+        <!-- Col 1: Brand Info -->
         <div class="footer-col footer-col-brand">
           <a href="#home" class="footer-logo">
             <img src="assets/images/logo.png" alt="Shiv Safar Holidays Logo" class="footer-logo-img">
           </a>
-          <p class="footer-tagline">Making every trip special</p>
+          <p class="footer-tagline">Making Every Trip Special.</p>
           <p class="footer-desc">
-            Your trusted travel partner for unforgettable holidays across the world.
+            Gandhinagar and Gujarat's most trusted international travel management agency. Designing handcrafted luxury vacations, romantic honeymoons, and seamless cruise voyages.
           </p>
-          <!-- Social Icons -->
           <div class="social-links">
-            <a href="https://facebook.com" target="_blank" rel="noopener" class="social-btn btn-fb" aria-label="Facebook">
-              <i class="fa-brands fa-facebook-f"></i>
-            </a>
-            <a href="https://instagram.com" target="_blank" rel="noopener" class="social-btn btn-insta" aria-label="Instagram">
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-            <a href="https://youtube.com" target="_blank" rel="noopener" class="social-btn btn-yt" aria-label="YouTube">
-              <i class="fa-brands fa-youtube"></i>
-            </a>
-            <a href="https://wa.me/919102185599?text=Hello%20Shiv%20Safar%20Holidays!" target="_blank" rel="noopener" class="social-btn btn-wa" aria-label="WhatsApp">
-              <i class="fa-brands fa-whatsapp"></i>
-            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener" class="social-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://facebook.com" target="_blank" rel="noopener" class="social-btn" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://wa.me/919102185599" target="_blank" rel="noopener" class="social-btn" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="mailto:shivsafarholidays@gmail.com" class="social-btn" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
           </div>
         </div>
 
-        <!-- Column 2: Quick Links -->
+        <!-- Col 2: Quick Links -->
         <div class="footer-col">
           <h4 class="footer-heading">Quick Links</h4>
           <ul class="footer-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#destinations">Destinations</a></li>
-            <li><a href="#packages">Holiday Packages</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#home"><i class="fa-solid fa-chevron-right"></i> Home</a></li>
+            <li><a href="destinations.html"><i class="fa-solid fa-chevron-right"></i> Destinations Atlas (2026)</a></li>
+            <li><a href="packages.html"><i class="fa-solid fa-chevron-right"></i> Holiday Packages</a></li>
+            <li><a href="about.html"><i class="fa-solid fa-chevron-right"></i> About Us</a></li>
+            <li><a href="contact.html"><i class="fa-solid fa-chevron-right"></i> Contact Concierge</a></li>
           </ul>
         </div>
 
-        <!-- Column 3: Popular Destinations with Thumbnails -->
+        <!-- Col 3: Popular Horizons -->
         <div class="footer-col">
-          <h4 class="footer-heading">Popular Destinations</h4>
+          <h4 class="footer-heading">Popular Horizons</h4>
           <ul class="footer-dest-list">
-            <li onclick="openDestinationInfo('Dubai')">
-              <img src="assets/images/dest-dubai.jpg" alt="Dubai" class="thumb-img">
-              <span>Dubai</span>
-            </li>
-            <li onclick="openDestinationInfo('Bali')">
-              <img src="assets/images/dest-bali.jpg" alt="Bali" class="thumb-img">
-              <span>Bali</span>
-            </li>
-            <li onclick="openDestinationInfo('Singapore')">
-              <img src="assets/images/dest-singapore.jpg" alt="Singapore" class="thumb-img">
-              <span>Singapore</span>
-            </li>
-            <li onclick="openDestinationInfo('Malaysia')">
-              <img src="assets/images/dest-malaysia.jpg" alt="Malaysia" class="thumb-img">
-              <span>Malaysia</span>
-            </li>
-            <li onclick="openDestinationInfo('Thailand')">
-              <img src="assets/images/dest-thailand.jpg" alt="Thailand" class="thumb-img">
-              <span>Thailand</span>
-            </li>
+            <li><a href="destinations.html#dubai"><img src="assets/images/dest-dubai.jpg" alt="Dubai" class="thumb-img"> <span>Dubai Luxury Oasis</span></a></li>
+            <li><a href="destinations.html#bali"><img src="assets/images/dest-bali.jpg" alt="Bali" class="thumb-img"> <span>Bali Tropical Villa</span></a></li>
+            <li><a href="destinations.html#singapore"><img src="assets/images/dest-singapore.jpg" alt="Singapore" class="thumb-img"> <span>Singapore & Cruise</span></a></li>
+            <li><a href="destinations.html#malaysia"><img src="assets/images/dest-malaysia.jpg" alt="Malaysia" class="thumb-img"> <span>Malaysia & Genting</span></a></li>
+            <li><a href="destinations.html#thailand"><img src="assets/images/dest-thailand.jpg" alt="Thailand" class="thumb-img"> <span>Thailand Coral Islands</span></a></li>
           </ul>
         </div>
 
-        <!-- Column 4: Contact Us -->
+        <!-- Col 4: Contact Us -->
         <div class="footer-col footer-col-contact">
-          <h4 class="footer-heading">Contact Us</h4>
+          <h4 class="footer-heading">Visit & Connect</h4>
           <ul class="contact-list">
             <li>
               <i class="fa-solid fa-location-dot contact-icon"></i>
-              <span>D409, Siddharaj Square, opposite landmark, kudasan, gandhinagar, 382421</span>
+              <span>D409, Siddharaj Square, Opp. Landmark, Kudasan, Gandhinagar, Gujarat 382421</span>
             </li>
             <li>
               <i class="fa-solid fa-phone contact-icon"></i>
-              <a href="tel:9102185599">9102185599</a>
+              <div>
+                <a href="tel:9512165599"><strong>9512165599</strong></a> / <a href="tel:9102185599">9102185599</a>
+                <div style="font-size:0.75rem; color:#94a3b8;">Mon - Sun: 9:30 AM – 8:30 PM</div>
+              </div>
             </li>
             <li>
               <i class="fa-solid fa-envelope contact-icon"></i>
@@ -1144,20 +1153,28 @@
             <span class="msme-badge"><i class="fa-solid fa-shield-check"></i> 100% Verified</span>
           </div>
         </div>
-
       </div>
 
-      <!-- Bottom Copyright Bar -->
+      <!-- Bottom Bar -->
       <div class="footer-bottom">
-        <p class="copyright-text">© 2026 Shiv Safar Holidays. All Rights Reserved.</p>
+        <p class="copyright-text">© 2026 Shiv Safar Holidays. All Rights Reserved. Crafted with passion in Gandhinagar, Gujarat.</p>
+        
+        <div class="footer-payment-badges">
+          <span style="font-size:0.75rem; color:#94a3b8; margin-right:4px;">Secure Payments:</span>
+          <i class="fa-brands fa-cc-visa" title="Visa"></i>
+          <i class="fa-brands fa-cc-mastercard" title="Mastercard"></i>
+          <i class="fa-brands fa-amazon-pay" title="UPI & Netbanking"></i>
+        </div>
+
         <div class="footer-bottom-links">
           <a href="#" onclick="openTerms('Privacy Policy'); return false;">Privacy Policy</a>
           <span class="divider">|</span>
           <a href="#" onclick="openTerms('Terms & Conditions'); return false;">Terms & Conditions</a>
           <span class="divider">|</span>
-          <a href="#" onclick="openTerms('Sitemap'); return false;">Sitemap</a>
+          <a href="contact.html">Get in Touch</a>
         </div>
       </div>
+
     </div>
   </footer>
 
