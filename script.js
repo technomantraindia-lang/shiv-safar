@@ -58,17 +58,20 @@ function initMobileMenu() {
   const navMenu = document.getElementById('navMenu');
 
   if (mobileBtn && navMenu) {
-    mobileBtn.addEventListener('click', () => {
-      navMenu.classList.toggle('open');
-      const isOpen = navMenu.classList.contains('open');
-      mobileBtn.classList.toggle('active', isOpen);
-      document.body.style.overflow = isOpen ? 'hidden' : '';
+    mobileBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const willOpen = !navMenu.classList.contains('open') && !navMenu.classList.contains('active');
+      navMenu.classList.toggle('open', willOpen);
+      navMenu.classList.toggle('active', willOpen);
+      mobileBtn.classList.toggle('active', willOpen);
+      document.body.style.overflow = willOpen ? 'hidden' : '';
     });
 
     // Close when clicking outside
     document.addEventListener('click', (e) => {
-      if (!navMenu.contains(e.target) && !mobileBtn.contains(e.target) && navMenu.classList.contains('open')) {
+      if (!navMenu.contains(e.target) && !mobileBtn.contains(e.target) && (navMenu.classList.contains('open') || navMenu.classList.contains('active'))) {
         navMenu.classList.remove('open');
+        navMenu.classList.remove('active');
         mobileBtn.classList.remove('active');
         document.body.style.overflow = '';
       }
