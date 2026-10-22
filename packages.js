@@ -103,7 +103,7 @@ function initFilterPills() {
         } else {
           // If in catalog, hide non-matching catalog cards
           if (card.classList.contains('catalog-card')) {
-            card.style.display = (filter === 'bali' || filter === 'thailand' || filter === 'malaysia') ? (type === filter ? '' : 'none') : '';
+            card.style.display = (filter === 'bali' || filter === 'singapore') ? (type === filter ? '' : 'none') : '';
           }
         }
       });
@@ -205,19 +205,17 @@ function initTripCustomizer() {
   const basePrices = {
     dubai: 75000,
     bali: 76999,
-    singapore: 110000,
+    cruise: 110000,
     asia: 155000,
-    thailand: 62000,
-    malaysia: 58500
+    singapore: 88000
   };
 
   const destMeta = {
     dubai: { img: 'assets/images/pkg-dubai.jpg', name: 'Dubai, UAE • Desert Safaris & Skyline Luxury' },
     bali: { img: 'assets/images/pkg-bali.jpg', name: 'Bali, Indonesia • Private Pool Villas & Emerald Terraces' },
-    singapore: { img: 'assets/images/pkg-singapore.jpg', name: 'Singapore & Cruise • Marina Bay & High Seas Voyage' },
+    cruise: { img: 'assets/images/pkg-singapore.jpg', name: 'Singapore & Dream Cruise • Marina Bay & High Seas Voyage' },
     asia: { img: 'assets/images/pkg-asia.jpg', name: 'Singapore, Malaysia & Thailand • 3-Country Grand Odyssey' },
-    thailand: { img: 'assets/images/dest-thailand.jpg', name: 'Thailand • Coral Islands, Speedboats & Nightlife' },
-    malaysia: { img: 'assets/images/dest-malaysia.jpg', name: 'Malaysia • Genting Skyway & Kuala Lumpur City' }
+    singapore: { img: 'assets/images/dest-singapore.jpg', name: 'Singapore Classic Discovery • City & Sentosa Highlights' }
   };
 
   function updateEstimate() {
@@ -247,7 +245,7 @@ function initTripCustomizer() {
 
     const waMsg = `Hello Shiv Safar Holidays, I customized a trip spec on your website:%0A• Destination: ${dest.toUpperCase()}%0A• Stays: ${style}%0A• Duration: ${duration} Days%0A• Dietary: ${meal}%0A• Estimate: ${formatted} per person.%0APlease share the detailed proposed itinerary!`;
     if (waBtn) {
-      waBtn.href = `https://wa.me/919102185599?text=${waMsg}`;
+      waBtn.href = `https://wa.me/919512186116?text=${waMsg}`;
     }
   }
 
@@ -280,5 +278,5 @@ function scrollToTop() {
 }
 
 function openTerms(type) {
-  alert(`${type} - Shiv Safar Holidays\n\nAll package departures are backed by our transparent upfront pricing guarantee and 24/7 dedicated tour manager on-call. For queries, call 9512165599 or email shivsafarholidays@gmail.com.`);
+  alert(`${type} - Shiv Safar Holidays\n\nAll package departures are backed by our transparent upfront pricing guarantee and 24/7 dedicated tour manager on-call. For queries, call 9512186116 or email shivsafarholidays@gmail.com.`);
 }

@@ -3,11 +3,11 @@
    State-of-the-art filtering, scroll animations, quiz logic & modals
    ========================================================================== */
 
-// --- Comprehensive International Destinations Database ---
+// --- Comprehensive International Destinations Database (Official Itineraries) ---
 const destinationsData = [
   {
     id: 'dubai',
-    name: 'Dubai',
+    name: 'Dubai Luxury Oasis',
     country: 'United Arab Emirates',
     region: 'middle-east',
     vibe: ['luxury', 'family', 'shopping'],
@@ -15,8 +15,7 @@ const destinationsData = [
     gallery: [
       'assets/images/dest-dubai.jpg',
       'assets/images/pkg-dubai.jpg',
-      'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1518684079-3c830dcef090?auto=format&fit=crop&w=1200&q=80'
+      'assets/images/hero-bg.jpg'
     ],
     price: '₹75,000',
     duration: '6N / 7D',
@@ -25,8 +24,8 @@ const destinationsData = [
     visaType: 'Instant eVisa',
     visaClass: 'visa-evisa',
     weather: '26°C - 31°C Sunny',
-    desc: 'The playground of futuristic architectural marvels, golden sand desert safaris, mega shopping paradises and Michelin-starred dining on the Persian Gulf.',
-    attractions: ['Burj Khalifa 124th Floor', 'Desert Safari & BBQ Dinner', 'Marina Yacht Cruise', 'Museum of the Future', 'Dubai Mall & Fountain'],
+    desc: 'Futuristic architectural marvels, golden sand desert safaris, mega shopping paradises and private yacht cruises on the Arabian Gulf.',
+    attractions: ['Burj Khalifa 124th Floor', 'Desert Safari & BBQ Dinner', 'Marina Yacht Cruise', 'Museum of the Future', 'Abu Dhabi Sheikh Zayed Grand Mosque'],
     itinerarySnippet: [
       { day: 'Day 1', title: 'Arrival & Dubai Marina Dhow Cruise Dinner' },
       { day: 'Day 2', title: 'Half-day City Tour & Burj Khalifa Sky View' },
@@ -35,21 +34,20 @@ const destinationsData = [
       { day: 'Day 5', title: 'Abu Dhabi Day Trip: Sheikh Zayed Grand Mosque' },
       { day: 'Day 6-7', title: 'Gold Souk Shopping & Luxury Departure' }
     ],
-    cuisine: ['Shawarma & Mezze Platter', 'Camel Milk Gelato', 'Al Machboos Spiced Rice', 'Luqaimat Sweet Dumplings'],
+    pdfFile: 'Dubai_Luxury_Itinerary_Premium_Edition shiv-safar-holidays.1.pdf',
+    cuisine: ['Pure Veg Indian Dinners Everyday', 'Jain Meal Arrangements', 'Traditional Sweets', 'Fresh Dates & Mocktails'],
     popularFor: 'Luxury lovers, couples & family holidays'
   },
   {
     id: 'bali',
-    name: 'Bali',
+    name: 'Bali Tropical Paradise',
     country: 'Indonesia',
     region: 'southeast-asia',
     vibe: ['honeymoon', 'beaches', 'nature', 'wellness'],
     image: 'assets/images/dest-bali.jpg',
     gallery: [
       'assets/images/dest-bali.jpg',
-      'assets/images/pkg-bali.jpg',
-      'https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1555400038-63f5ba517a47?auto=format&fit=crop&w=1200&q=80'
+      'assets/images/pkg-bali.jpg'
     ],
     price: '₹76,999',
     duration: '6N / 7D',
@@ -68,261 +66,107 @@ const destinationsData = [
       { day: 'Day 5', title: 'Ayung River White Water Rafting & Ubud Monkey Forest' },
       { day: 'Day 6-7', title: 'Tanah Lot Golden Sunset & Traditional Spa Day' }
     ],
-    cuisine: ['Nasi Goreng & Satay', 'Babi Guling / Balinese Veg Curry', 'Fresh Coconut & Tropical Acai Bowls', 'Pisang Goreng Honey Bananas'],
-    popularFor: 'Honeymooners, wellness seekers & photographers'
+    pdfFile: 'bali package 2 (1).pdf',
+    cuisine: ['Indian Veg Curries', 'Pure Jain Dining Assistance', 'Fresh Coconut & Tropical Fruits', 'Balinese Vegetarian Delicacies'],
+    popularFor: 'Honeymooners, wellness seekers & private villa lovers'
   },
   {
-    id: 'singapore',
-    name: 'Singapore & Cruise',
-    country: 'Singapore',
+    id: 'singapore-cruise',
+    name: 'Singapore & Royal Dream Cruise',
+    country: 'Singapore & High Seas',
     region: 'southeast-asia',
-    vibe: ['family', 'luxury', 'cruise', 'shopping'],
-    image: 'assets/images/dest-singapore.jpg',
+    vibe: ['family', 'luxury', 'cruise'],
+    image: 'assets/images/pkg-singapore.jpg',
     gallery: [
-      'assets/images/dest-singapore.jpg',
       'assets/images/pkg-singapore.jpg',
-      'https://images.unsplash.com/photo-1525625293386-3f8f99389edd?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1506351421178-63b52a2d15c2?auto=format&fit=crop&w=1200&q=80'
+      'assets/images/dest-singapore.jpg'
     ],
     price: '₹1,10,000',
     duration: '6D / 5N',
     bestSeason: 'Year-Round',
-    flightTime: '5h 20m',
+    flightTime: '5h 20m Direct',
     visaType: 'eVisa via Agency',
     visaClass: 'visa-evisa',
     weather: '28°C - 32°C Warm Breeze',
-    desc: 'The dazzling lion city where super-trees glow at night, Universal Studios delights all ages, and luxury cruise liners sail into the sunset with Broadway entertainment.',
-    attractions: ['Gardens by the Bay Supertree Grove', 'Universal Studios Sentosa', 'Luxury Ocean Cruise (2 Nights)', 'Marina Bay Sands SkyPark', 'Jewel Changi Rain Vortex'],
+    desc: 'The ultimate luxury duo: explore Singapore Marina Bay Sands and Universal Studios Sentosa, then board a world-class luxury high seas cruise with lavish dining and theatrical shows.',
+    attractions: ['Luxury High Seas Cruise Liner', 'Universal Studios Sentosa', 'Gardens by the Bay Supertree Grove', 'Marina Bay Sands SkyPark', 'Jewel Changi Rain Vortex'],
     itinerarySnippet: [
-      { day: 'Day 1', title: 'Singapore Arrival, Changi Rain Vortex & Night Safari' },
+      { day: 'Day 1', title: 'Singapore Arrival, Changi Rain Vortex & Hotel Check-in' },
       { day: 'Day 2', title: 'Full Day Universal Studios Sentosa & Cable Car' },
       { day: 'Day 3', title: 'Gardens by the Bay & Boarding Dream Cruise Liner' },
       { day: 'Day 4', title: 'Full Day at High Sea: Waterpark, Shows & Gourmet Feasts' },
       { day: 'Day 5', title: 'Disembark Cruise & Marina Bay Sands SkyPark View' },
-      { day: 'Day 6', title: 'Orchard Road Shopping & Changi Jewel Departure' }
+      { day: 'Day 6', title: 'Orchard Road Shopping & Departure' }
     ],
-    cuisine: ['Hainanese Chicken / Veg Fragrant Rice', 'Chilli Crab & Mantou Buns', 'Singapore Laksa Noodle Soup', 'Kaya Toast & Kopi'],
-    popularFor: 'Families with kids, cruise enthusiasts & modern city explorers'
+    pdfFile: 'Shiv_Safar_Holidays_Singapore_Cruise_Package_2 Adults.pdf.pdf',
+    cuisine: ['Onboard Indian & Jain Buffets', 'Pure Veg Counters on Cruise', 'Marina Bay Indian Specialties', 'International Desserts'],
+    popularFor: 'Families with kids, cruise lovers & anniversary celebrations'
   },
   {
-    id: 'malaysia',
-    name: 'Malaysia',
-    country: 'Malaysia',
+    id: 'asia',
+    name: 'Singapore, Malaysia & Thailand Trio',
+    country: 'Singapore, Malaysia, Thailand',
     region: 'southeast-asia',
-    vibe: ['family', 'nature', 'budget', 'culture'],
-    image: 'assets/images/dest-malaysia.jpg',
+    vibe: ['family', 'culture', 'shopping'],
+    image: 'assets/images/pkg-asia.jpg',
     gallery: [
-      'assets/images/dest-malaysia.jpg',
       'assets/images/pkg-asia.jpg',
-      'https://images.unsplash.com/photo-1596422846543-75c6fc197f07?auto=format&fit=crop&w=1200&q=80'
+      'assets/images/dest-singapore.jpg',
+      'assets/images/dest-malaysia.jpg',
+      'assets/images/dest-thailand.jpg'
     ],
-    price: '₹62,000',
-    duration: '5N / 6D',
+    price: '₹1,55,000',
+    duration: '10N / 11D',
     bestSeason: 'Year-Round',
-    flightTime: '5h 10m',
-    visaType: 'Visa-Free Entry',
+    flightTime: 'Connecting flights',
+    visaType: 'eVisa / Visa-Free',
     visaClass: 'visa-free',
-    weather: '26°C - 32°C Tropical',
-    desc: 'A vibrant kaleidoscope of colonial architecture, glowing Petronas Twin Towers, misty cool Genting Highlands cable cars and golden Batu Caves.',
-    attractions: ['Petronas Twin Towers Skybridge', 'Batu Caves Rainbow Steps', 'Genting SkyWorlds Theme Park & Cable Car', 'Putrajaya Pink Mosque', 'KL Tower Observation Deck'],
+    weather: '27°C - 32°C Tropical',
+    desc: 'The iconic 3-country Southeast Asian expedition covering Singapore Marina Bay, Genting Highlands, Kuala Lumpur Petronas Towers, Pattaya Coral Island, and Bangkok temples.',
+    attractions: ['Universal Studios Sentosa', 'Genting Skyway & SkyWorlds', 'Petronas Twin Towers & Batu Caves', 'Pattaya Coral Island Speedboat', 'Bangkok Golden Buddha Temples'],
     itinerarySnippet: [
-      { day: 'Day 1', title: 'Kuala Lumpur Airport Welcome & Hotel Check-in' },
-      { day: 'Day 2', title: 'KL City Tour, Petronas Towers & King Palace' },
-      { day: 'Day 3', title: 'Batu Caves & Genting Highlands Skyway Cable Car' },
-      { day: 'Day 4', title: 'Genting Indoor & Outdoor Theme Parks Adventure' },
-      { day: 'Day 5-6', title: 'Bukit Bintang Street Market & Departure' }
+      { day: 'Day 1-3', title: 'Singapore: Changi, Sentosa Universal, Gardens by the Bay' },
+      { day: 'Day 4', title: 'Luxury Coach to Malaysia, Genting Highlands Cable Car' },
+      { day: 'Day 5-6', title: 'Batu Caves, Kuala Lumpur City Tour & Petronas Towers' },
+      { day: 'Day 7-8', title: 'Flight to Bangkok, Transfer to Pattaya & Alcazar Show' },
+      { day: 'Day 9-10', title: 'Coral Island Speedboat Tour & Bangkok City Temples' },
+      { day: 'Day 11', title: 'Indira Gandhi / Mumbai Flight Back Home' }
     ],
-    cuisine: ['Roti Canai with Dhal Curry', 'Nasi Lemak Coconut Rice', 'Char Kway Teow', 'Cendol Shaved Ice Dessert'],
-    popularFor: 'Family vacations, budget international travel & theme park lovers'
+    pdfFile: 'Shiv_Safar_Holidays_Singapore_Malaysia_Thailand_Itineraryfor 5 adults.pdf',
+    cuisine: ['Guaranteed Indian Dinners Everyday', 'Jain & Veg Meals Arranged', 'Fresh Tropical Fruit Feasts', 'Pure Veg Partner Restaurants'],
+    popularFor: 'Complete multi-country family vacations & group tours'
   },
   {
-    id: 'thailand',
-    name: 'Thailand (Bangkok & Phuket)',
-    country: 'Thailand',
+    id: 'singapore',
+    name: 'Singapore Classic Discovery',
+    country: 'Singapore',
     region: 'southeast-asia',
-    vibe: ['beaches', 'shopping', 'nightlife', 'budget'],
-    image: 'assets/images/dest-thailand.jpg',
+    vibe: ['family', 'luxury', 'shopping'],
+    image: 'assets/images/dest-singapore.jpg',
     gallery: [
-      'assets/images/dest-thailand.jpg',
-      'https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1506665531195-3566af2b4dfa?auto=format&fit=crop&w=1200&q=80'
+      'assets/images/dest-singapore.jpg',
+      'assets/images/pkg-singapore.jpg'
     ],
-    price: '₹55,000',
-    duration: '5N / 6D',
-    bestSeason: 'Nov - Apr',
-    flightTime: '4h 15m',
-    visaType: 'Visa-Free Entry',
-    visaClass: 'visa-free',
-    weather: '27°C - 33°C Sunny Coast',
-    desc: 'The kingdom of smiling hospitality, emerald Phi Phi Island lagoons, golden Buddhist sanctuaries, buzzing night bazaars and exhilarating water sports.',
-    attractions: ['Phi Phi Islands Speedboat Tour', 'James Bond Island Phang Nga Bay', 'Bangkok Grand Palace & Emerald Buddha', 'Chaophraya Princess River Dinner Cruise', 'Safari World & Marine Park'],
-    itinerarySnippet: [
-      { day: 'Day 1', title: 'Phuket Arrival & Patong Beach Walk' },
-      { day: 'Day 2', title: 'Phi Phi Island & Maya Bay Speedboat Tour with Snorkeling' },
-      { day: 'Day 3', title: 'Phuket to Bangkok Flight & Evening River Cruise' },
-      { day: 'Day 4', title: 'Bangkok City Temples & Pratunam Wholesale Shopping' },
-      { day: 'Day 5-6', title: 'Safari World Marine Park & Flight Back Home' }
-    ],
-    cuisine: ['Pad Thai Wok Noodles', 'Tom Yum Hot & Sour Soup', 'Mango Sticky Rice with Coconut Cream', 'Thai Green Coconut Curry'],
-    popularFor: 'Friends group trips, budget holidays & beach lovers'
-  },
-  {
-    id: 'maldives',
-    name: 'Maldives Paradise',
-    country: 'Maldives',
-    region: 'island-escapes',
-    vibe: ['luxury', 'honeymoon', 'beaches'],
-    image: 'https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=1200&q=80',
-    gallery: [
-      'https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1573843981267-be1999ff37cd?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80'
-    ],
-    price: '₹1,25,000',
-    duration: '4N / 5D',
-    bestSeason: 'Nov - Apr',
-    flightTime: '4h 00m',
-    visaType: 'Visa on Arrival (Free)',
-    visaClass: 'visa-free',
-    weather: '28°C - 31°C Tropical Calm',
-    desc: 'Unrivaled tropical romance with overwater bungalows suspended over turquoise atolls, private infinity plunge pools, sunset dolphin cruises and vibrant house reefs.',
-    attractions: ['Overwater Villa with Direct Lagoon Access', 'Sunset Dolphin Speedboat Cruise', 'Snorkeling with Manta Rays & Turtles', 'Candlelit Sandbank Private Dinner', 'Underwater Spa Experience'],
-    itinerarySnippet: [
-      { day: 'Day 1', title: 'Malé Arrival & Speedboat/Seaplane to Private Island Resort' },
-      { day: 'Day 2', title: 'Overwater Villa Living & House Reef Snorkeling' },
-      { day: 'Day 3', title: 'Sunset Dolphin Cruise & Starlit Beachfront Dinner' },
-      { day: 'Day 4', title: 'Private Sandbank Picnic & Relaxing Aromatherapy Spa' },
-      { day: 'Day 5', title: 'Seaplane Scenic Ride back to Malé International Airport' }
-    ],
-    cuisine: ['Fresh Grilled Reef Fish', 'Mas Huni Coconut Tuna Breakfast', 'Exotic Tropical Fruit Platters', 'International Fine Dining Buffets'],
-    popularFor: 'Honeymoon couples & ultra-luxury barefoot escapes'
-  },
-  {
-    id: 'switzerland',
-    name: 'Switzerland Alpine Wonders',
-    country: 'Switzerland',
-    region: 'europe',
-    vibe: ['luxury', 'nature', 'honeymoon', 'family'],
-    image: 'https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?auto=format&fit=crop&w=1200&q=80',
-    gallery: [
-      'https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1527668752968-14dc70a27c95?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1200&q=80'
-    ],
-    price: '₹2,45,000',
-    duration: '7N / 8D',
-    bestSeason: 'May - Oct (Summer) / Dec - Mar (Snow)',
-    flightTime: '9h 30m',
-    visaType: 'Schengen Visa Required',
+    price: '₹88,000',
+    duration: '6D / 5N',
+    bestSeason: 'Year-Round',
+    flightTime: '5h 20m Direct',
+    visaType: 'eVisa via Agency',
     visaClass: 'visa-evisa',
-    weather: '18°C - 24°C Crisp Alpine',
-    desc: 'The peak of European grandeur: snow-capped Matterhorn, emerald mountain lakes of Lucerne & Interlaken, scenic panoramic Glacier Express trains and Swiss chocolates.',
-    attractions: ['Jungfraujoch - Top of Europe (3,454m)', 'Mount Titlis Rotating Cable Car & Cliff Walk', 'Lake Lucerne Scenic Steamboat Cruise', 'Interlaken & Lauterbrunnen Waterfalls Valley', 'Glacier Express Scenic Train Journey'],
+    weather: '28°C - 32°C Pleasant',
+    desc: 'An immersive 6-day holiday exploring the wonders of Singapore: Marina Bay Sands, Gardens by the Bay Cloud Forest, Universal Studios Sentosa, Night Safari, and private transfers.',
+    attractions: ['Universal Studios Sentosa All-Access', 'Gardens by the Bay Flower Dome', 'Marina Bay Sands SkyPark Observation Deck', 'Singapore Night Safari Tram', 'Jewel Changi Canopy & Rain Vortex'],
     itinerarySnippet: [
-      { day: 'Day 1', title: 'Zurich Arrival & Scenic Train to Lucerne' },
-      { day: 'Day 2', title: 'Mount Titlis Ice Flyer & Chapel Bridge Lucerne' },
-      { day: 'Day 3', title: 'Lucerne to Interlaken & Lauterbrunnen 72 Waterfalls' },
-      { day: 'Day 4', title: 'Jungfraujoch Top of Europe Cogwheel Train' },
-      { day: 'Day 5', title: 'Zermatt & Matterhorn Glacier Paradise' },
-      { day: 'Day 6', title: 'Glacier Express Panoramic Ride to St. Moritz' },
-      { day: 'Day 7-8', title: 'Zurich Old Town, Lindt Chocolate Home & Departure' }
+      { day: 'Day 1', title: 'Singapore Arrival, Changi Jewel & Night Safari Adventure' },
+      { day: 'Day 2', title: 'Full Day Sentosa: Universal Studios & S.E.A. Aquarium' },
+      { day: 'Day 3', title: 'City Tour: Merlion Park, Chinatown & Marina Bay Sands' },
+      { day: 'Day 4', title: 'Gardens by the Bay (Flower Dome & Cloud Forest)' },
+      { day: 'Day 5', title: 'Orchard Road Shopping & Little India Discovery' },
+      { day: 'Day 6', title: 'Private Airport Transfer & Departure' }
     ],
-    cuisine: ['Swiss Cheese Fondue & Raclette', 'Crispy Potato Rösti', 'Artisan Swiss Dark Chocolates', 'Fresh Alpine Berry Tarts'],
-    popularFor: 'Dream family vacations, anniversary milestones & cinematic scenery'
-  },
-  {
-    id: 'vietnam',
-    name: 'Vietnam Highlights',
-    country: 'Vietnam',
-    region: 'southeast-asia',
-    vibe: ['nature', 'culture', 'budget', 'adventure'],
-    image: 'https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=1200&q=80',
-    gallery: [
-      'https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1559592413-7cec4d0cae2b?auto=format&fit=crop&w=1200&q=80'
-    ],
-    price: '₹58,000',
-    duration: '6N / 7D',
-    bestSeason: 'Oct - Apr',
-    flightTime: '4h 45m',
-    visaType: 'Instant eVisa',
-    visaClass: 'visa-evisa',
-    weather: '22°C - 28°C Pleasant',
-    desc: 'Emerald limestone pillars rising from Ha Long Bay waters, lantern-lit romantic streets of Hoi An ancient town, and the viral Golden Hands bridge of Ba Na Hills.',
-    attractions: ['Overnight Ha Long Bay Luxury Junk Boat Cruise', 'Ba Na Hills & Golden Giant Hands Bridge', 'Hoi An Lantern Town by Night', 'Cu Chi Tunnels Saigon Excursion', 'Hanoi Old Quarter & Train Street'],
-    itinerarySnippet: [
-      { day: 'Day 1', title: 'Hanoi Arrival, Train Street Coffee & French Quarter' },
-      { day: 'Day 2', title: 'Transfer to Ha Long Bay & Board 5-Star Overnight Cruise' },
-      { day: 'Day 3', title: 'Morning Tai Chi on Bay, Cave Exploration & Flight to Da Nang' },
-      { day: 'Day 4', title: 'Ba Na Hills Sun World & Famous Golden Bridge Walk' },
-      { day: 'Day 5', title: 'Hoi An Ancient Heritage Town, Coconut Basket Boat Tour' },
-      { day: 'Day 6-7', title: 'Saigon War Remnants, Cu Chi Tunnels & Farewell Flight' }
-    ],
-    cuisine: ['Warm Pho Rice Noodle Soup', 'Crispy Banh Mi Baguettes', 'Vietnamese Egg Coffee / Coconut Coffee', 'Fresh Spring Rolls with Peanut Dip'],
-    popularFor: 'Trending travelers, budget adventurers & culture enthusiasts'
-  },
-  {
-    id: 'japan',
-    name: 'Japan (Tokyo & Kyoto)',
-    country: 'Japan',
-    region: 'europe', // east-asia
-    vibe: ['culture', 'luxury', 'family', 'shopping'],
-    image: 'https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=1200&q=80',
-    gallery: [
-      'https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=1200&q=80'
-    ],
-    price: '₹1,95,000',
-    duration: '7N / 8D',
-    bestSeason: 'Mar - May (Cherry Blossom) / Oct - Nov (Autumn)',
-    flightTime: '8h 15m',
-    visaType: 'eVisa for Indians',
-    visaClass: 'visa-evisa',
-    weather: '15°C - 22°C Mild',
-    desc: 'The seamless blend of neon-lit Shibuya crossings, tranquil thousand-torii shrine paths in Kyoto, high-speed Shinkansen bullet trains and majestic Mount Fuji.',
-    attractions: ['Shinkansen Bullet Train Experience', 'Mount Fuji 5th Station & Lake Kawaguchi', 'Kyoto Fushimi Inari Shrine (10,000 Gates)', 'Tokyo Shibuya Crossing & TeamLab Planets', 'Arashiyama Bamboo Forest & Nara Deer Park'],
-    itinerarySnippet: [
-      { day: 'Day 1', title: 'Tokyo Haneda/Narita Arrival & Shinjuku Neon Night' },
-      { day: 'Day 2', title: 'Sensoji Temple, TeamLab Planets Digital Art & Shibuya Sky' },
-      { day: 'Day 3', title: 'Mount Fuji Day Excursion & Hakone Ropeway' },
-      { day: 'Day 4', title: 'Shinkansen Bullet Train to Kyoto & Gion Geisha District' },
-      { day: 'Day 5', title: 'Fushimi Inari Red Torii Gates & Kinkaku-ji Golden Pavilion' },
-      { day: 'Day 6', title: 'Arashiyama Bamboo Grove & Nara Friendly Deer Park' },
-      { day: 'Day 7-8', title: 'Osaka Dotonbori Street Food Feast & Kansai Departure' }
-    ],
-    cuisine: ['Authentic Ramen & Tempura', 'Sushi Moriawase & Wagyu Beef', 'Matcha Green Tea Parfaits & Mochi', 'Fluffy Japanese Souffle Pancakes'],
-    popularFor: 'Culture lovers, tech explorers & once-in-a-lifetime journeys'
-  },
-  {
-    id: 'turkey',
-    name: 'Turkey (Istanbul & Cappadocia)',
-    country: 'Turkey',
-    region: 'middle-east',
-    vibe: ['honeymoon', 'culture', 'nature', 'luxury'],
-    image: 'https://images.unsplash.com/photo-1527838832700-5059252407fa?auto=format&fit=crop&w=1200&q=80',
-    gallery: [
-      'https://images.unsplash.com/photo-1527838832700-5059252407fa?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b?auto=format&fit=crop&w=1200&q=80'
-    ],
-    price: '₹1,35,000',
-    duration: '6N / 7D',
-    bestSeason: 'Apr - Jun & Sep - Nov',
-    flightTime: '6h 30m',
-    visaType: 'eVisa (with valid US/UK/Schengen)',
-    visaClass: 'visa-evisa',
-    weather: '18°C - 25°C Spring Bliss',
-    desc: 'Where East meets West across the Bosphorus Strait. Floating hot air balloons over surreal fairy chimneys in Cappadocia, ancient underground cities, and grand Ottoman palaces.',
-    attractions: ['Cappadocia Hot Air Balloon Sunrise Flight', 'Hagia Sophia & Blue Mosque Istanbul', 'Bosphorus Sunset Yacht Cruise', 'Cave Hotel Luxury Stay in Goreme', 'Grand Bazaar 4,000-Shop Wonder'],
-    itinerarySnippet: [
-      { day: 'Day 1', title: 'Istanbul Airport Welcome & Taksim Square Walk' },
-      { day: 'Day 2', title: 'Hagia Sophia, Blue Mosque & Grand Bazaar Shopping' },
-      { day: 'Day 3', title: 'Bosphorus Private Yacht Cruise & Domestic Flight to Cappadocia' },
-      { day: 'Day 4', title: 'Early Morning Hot Air Balloon Flight & Goreme Open Air Museum' },
-      { day: 'Day 5', title: 'Derinkuyu Underground City & Pigeon Valley Sunset' },
-      { day: 'Day 6-7', title: 'Return to Istanbul, Spice Bazaar & Departure' }
-    ],
-    cuisine: ['Turkish Kebabs & Pide Flatbreads', 'Baklava with Pistachio & Turkish Delight', 'Simit Sesame Bread with Turkish Tea', 'Rich Turkish Sand-Brewed Coffee'],
-    popularFor: 'Couples, photography enthusiasts & history lovers'
+    pdfFile: 'Shiv_Safar_Holidays_Singapore_Package_2 Adults-6 days 5 nights.pdf',
+    cuisine: ['Indian Vegetarian Meals Arranged', 'Authentic Little India Dining', 'Pure Jain Food Options', 'Gourmet Cafes'],
+    popularFor: 'First-time international travelers, couples & families'
   }
 ];
 
@@ -541,7 +385,7 @@ function renderDestinations() {
               <button class="btn-card-explore" onclick="openDestinationDetail('${dest.id}')">
                 Explore Guide <i class="fa-solid fa-arrow-right"></i>
               </button>
-              <a href="https://wa.me/919102185599?text=Hello%20Shiv%20Safar%20Holidays,%20I%20am%20interested%20in%20traveling%20to%20${encodeURIComponent(dest.name)}" 
+              <a href="https://wa.me/919512186116?text=Hello%20Shiv%20Safar%20Holidays,%20I%20am%20interested%20in%20traveling%20to%20${encodeURIComponent(dest.name)}" 
                  target="_blank" rel="noopener" class="btn-card-wa" title="WhatsApp Enquiry" aria-label="WhatsApp Enquiry">
                 <i class="fa-brands fa-whatsapp"></i>
               </a>
@@ -842,7 +686,7 @@ function openDestinationDetail(destId) {
         <button class="btn btn-gold" style="flex:1;" onclick="closeModal('destDetailModal'); openQuoteModal('${dest.name}');">
           Plan My Trip To ${dest.name} <i class="fa-solid fa-arrow-right"></i>
         </button>
-        <a href="https://wa.me/919102185599?text=Hello%20Shiv%20Safar%20Holidays,%20I%20am%20interested%20in%20customizing%20an%20itinerary%20for%20${encodeURIComponent(dest.name)}" 
+        <a href="https://wa.me/919512186116?text=Hello%20Shiv%20Safar%20Holidays,%20I%20am%20interested%20in%20customizing%20an%20itinerary%20for%20${encodeURIComponent(dest.name)}" 
            target="_blank" rel="noopener" class="btn" style="background:#25d366; color:#ffffff;">
           <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
         </a>
@@ -890,32 +734,28 @@ function computeQuizMatch() {
   
   let matchId = 'bali';
   let matchScore = 98;
-  let reason = 'Bali offers the perfect harmony of secluded pool villas, romantic sunsets and rejuvenating nature.';
+  let reason = 'Bali offers the perfect harmony of secluded private pool villas, romantic sunsets and rejuvenating nature.';
 
   if (traveler === 'couple' && scenery === 'luxury') {
     matchId = 'dubai';
     matchScore = 99;
-    reason = 'Dubai offers world-class dining, skyline views from Burj Khalifa, desert glamping and lavish private tours.';
+    reason = 'Dubai offers world-class dining, skyline views from Burj Khalifa, desert safaris and lavish private tours.';
   } else if (traveler === 'couple' && scenery === 'beach') {
-    matchId = 'maldives';
+    matchId = 'bali';
     matchScore = 99;
-    reason = 'The Maldives is the ultimate romantic escape with overwater villa luxury and private sandbank dinners.';
+    reason = 'Bali is the ultimate romantic escape with private pool villa luxury, Nusa Penida island and couple spa pampering.';
   } else if (traveler === 'family') {
     matchId = 'singapore';
-    matchScore = 97;
-    reason = 'Singapore is the safest and most entertaining haven for families with Universal Studios and high-seas cruise adventures.';
+    matchScore = 98;
+    reason = 'Singapore is the safest and most entertaining haven for families with Universal Studios Sentosa and Gardens by the Bay.';
   } else if (scenery === 'nature') {
-    matchId = 'switzerland';
+    matchId = 'singapore-cruise';
+    matchScore = 97;
+    reason = 'Experience panoramic high seas, ocean breezes, and world-class luxury aboard Dream Cruise liners.';
+  } else if (traveler === 'friends' || scenery === 'culture') {
+    matchId = 'asia';
     matchScore = 96;
-    reason = 'Switzerland’s alpine meadows, snowy peaks and scenic trains create an unforgettable cinematic journey.';
-  } else if (traveler === 'friends') {
-    matchId = 'thailand';
-    matchScore = 95;
-    reason = 'Thailand gives you high-speed island boat parties, bustling night markets and budget-friendly thrills.';
-  } else if (scenery === 'culture') {
-    matchId = 'turkey';
-    matchScore = 96;
-    reason = 'Cappadocia hot air balloons and Istanbul’s ancient bazaars create an enchanting cultural tapestry.';
+    reason = 'The 3-country expedition combines Singapore, Genting Highlands, Kuala Lumpur, and Bangkok into one unforgettable journey.';
   }
 
   const dest = destinationsData.find(d => d.id === matchId);
@@ -951,64 +791,64 @@ function computeQuizMatch() {
    ========================================================================== */
 const monthlyRecommendations = {
   jan: [
-    { id: 'dubai', weather: '24°C • Perfect Cool Sunshine', tip: 'Dubai Shopping Festival, pleasant desert safaris and outdoor Marina walks.' },
-    { id: 'thailand', weather: '28°C • Peak Beach Weather', tip: 'Calm turquoise waters in Phuket, Krabi & sunny skies.' },
-    { id: 'maldives', weather: '29°C • Clear Waters', tip: 'Unmatched underwater visibility for manta ray snorkeling.' }
+    { id: 'dubai', weather: '24°C • Perfect Cool Sunshine', tip: 'Dubai Shopping Festival, pleasant desert dune safaris and outdoor Marina walks.' },
+    { id: 'singapore-cruise', weather: '28°C • Warm Ocean Breeze', tip: 'Gentle sea breezes, high-seas sun decks and festive onboard gala celebrations.' },
+    { id: 'singapore', weather: '27°C • Ideal City Weather', tip: 'Comfortable sightseeing at Universal Studios Sentosa and Gardens by the Bay.' }
   ],
   feb: [
-    { id: 'dubai', weather: '25°C • Mild Winter Breeze', tip: 'Ideal for skydiving, yacht charters and Miracle Garden in full bloom.' },
-    { id: 'singapore', weather: '28°C • Festive Spring', tip: 'Lunar New Year celebrations, vibrant Chinatown and night river cruises.' },
-    { id: 'maldives', weather: '29°C • Romantic Season', tip: 'Valentine’s week candlelit beach dinners under starlit skies.' }
+    { id: 'dubai', weather: '25°C • Mild Winter Breeze', tip: 'Ideal for skydiving, yacht charters, desert safaris and Miracle Garden in full bloom.' },
+    { id: 'singapore', weather: '28°C • Festive Spring', tip: 'Vibrant city celebrations, Night Safari tram rides and Marina Bay SkyPark views.' },
+    { id: 'bali', weather: '28°C • Tropical Charm', tip: 'Romantic pool villa seclusion and lush green terraces in Ubud.' }
   ],
   mar: [
-    { id: 'vietnam', weather: '24°C • Pleasant Spring', tip: 'Ha Long Bay cruising and walking through lantern-lit Hoi An.' },
-    { id: 'japan', weather: '16°C • Cherry Blossom Bloom', tip: 'Sakura blossoms in Tokyo & Kyoto parks with crisp spring breeze.' },
-    { id: 'malaysia', weather: '28°C • Warm & Tropical', tip: 'Cool evenings in Genting Highlands and pleasant island escapes.' }
+    { id: 'dubai', weather: '27°C • Sunny Spring', tip: 'Burj Khalifa sunset views, dhow cruise dining and gold souk shopping.' },
+    { id: 'asia', weather: '28°C • Vibrant Southeast Asia', tip: 'Explore Singapore, Genting Highlands cable cars and Bangkok temples.' },
+    { id: 'bali', weather: '28°C • Refreshing Tropics', tip: 'Serene temple visits and relaxing Balinese spa therapies.' }
   ],
   apr: [
-    { id: 'bali', weather: '28°C • Dry Season Begins', tip: 'Clear blue skies over Nusa Penida and ideal surf conditions in Uluwatu.' },
-    { id: 'turkey', weather: '19°C • Spring Tulip Festival', tip: 'Istanbul parks blanketed with colorful tulips and pleasant balloon flights.' },
-    { id: 'japan', weather: '18°C • Spring Peak', tip: 'Scenic train rides under pink sakura trees and mountain hikes.' }
+    { id: 'bali', weather: '28°C • Dry Season Begins', tip: 'Clear blue skies over Nusa Penida and ideal sunrise views over Mount Batur.' },
+    { id: 'singapore-cruise', weather: '29°C • High Seas Sunshine', tip: 'Smooth sailing, crystal pool deck fun and Broadway theatrical shows.' },
+    { id: 'dubai', weather: '29°C • Pleasant Warmth', tip: 'Abu Dhabi Sheikh Zayed Mosque visits and air-conditioned luxury shopping.' }
   ],
   may: [
-    { id: 'switzerland', weather: '19°C • Alpine Meadows', tip: 'Wildflowers in bloom, sparkling glacial lakes and cable cars open.' },
-    { id: 'bali', weather: '27°C • Sunny & Breezy', tip: 'Cool mountain breezes in Ubud and perfect beach days.' },
-    { id: 'turkey', weather: '23°C • Ideal Mediterranean', tip: 'Warm sunny weather across Cappadocia valleys and Aegean coast.' }
+    { id: 'bali', weather: '27°C • Sunny & Breezy', tip: 'Cool mountain breezes in Ubud and perfect beach days in Seminyak.' },
+    { id: 'singapore', weather: '29°C • Summer Thrills', tip: 'Universal Studios Sentosa, Jewel Changi and Gardens by the Bay.' },
+    { id: 'asia', weather: '29°C • Multi-City Adventure', tip: 'Pattaya Coral Island watersports, Genting indoor parks and Kuala Lumpur towers.' }
   ],
   jun: [
-    { id: 'switzerland', weather: '22°C • Summer Perfection', tip: 'Hiking Lauterbrunnen waterfalls, Matterhorn views and outdoor cafes.' },
     { id: 'bali', weather: '26°C • Pleasant Island Breeze', tip: 'Low humidity, spectacular sunsets and cultural temple festivals.' },
-    { id: 'singapore', weather: '30°C • Summer Great Sale', tip: 'Great Singapore Sale discounts, Universal Studios summer thrill.' }
+    { id: 'singapore-cruise', weather: '29°C • Summer High Seas', tip: 'Family vacations aboard luxury liners with dedicated Indian buffets.' },
+    { id: 'singapore', weather: '29°C • Great City Escapes', tip: 'Sentosa Cable Car rides and Night Safari excursions.' }
   ],
   jul: [
-    { id: 'bali', weather: '26°C • Dry Season Peak', tip: 'Coolest and driest month in Bali, ideal for Mount Batur sunrise treks.' },
-    { id: 'switzerland', weather: '24°C • Alpine Summer', tip: 'Swimming in crystal clear Lake Lucerne and Top of Europe visits.' },
-    { id: 'malaysia', weather: '29°C • Rain-Free Coasts', tip: 'East coast beaches and cool indoor shopping pavilions in KL.' }
+    { id: 'bali', weather: '26°C • Dry Season Peak', tip: 'Coolest and driest month in Bali, ideal for Nusa Penida island speedboat tours.' },
+    { id: 'singapore', weather: '29°C • Festive Energy', tip: 'Full day at Sentosa theme parks and Marina Bay Sands shopping.' },
+    { id: 'asia', weather: '29°C • Grand Trio Season', tip: 'Genting SkyWorlds, Petronas Twin Towers and Bangkok shopping.' }
   ],
   aug: [
-    { id: 'bali', weather: '26°C • Optimal Island Weather', tip: 'Kite festivals, clear underwater coral diving and outdoor beach clubs.' },
-    { id: 'switzerland', weather: '23°C • Swiss National Day', tip: 'Fireworks over Lake Lucerne and panoramic Glacier Express rides.' },
-    { id: 'vietnam', weather: '28°C • Tropical Charm', tip: 'Da Nang coastal resorts and Golden Hands Bridge views.' }
+    { id: 'bali', weather: '26°C • Optimal Island Weather', tip: 'Clear underwater coral snorkeling, cliffside temples and private villa peace.' },
+    { id: 'singapore-cruise', weather: '29°C • Ocean Vacation', tip: 'Unwind on luxury cruise balconies with 24/7 concierge support.' },
+    { id: 'dubai', weather: '34°C • Indoor Luxury Season', tip: 'Museum of the Future, Dubai Mall Aquarium, and indoor theme parks.' }
   ],
   sep: [
-    { id: 'turkey', weather: '24°C • Autumn Golden Hour', tip: 'Mild temperatures in Istanbul and Cappadocia hot air balloon season.' },
-    { id: 'bali', weather: '27°C • Shoulder Season Bliss', tip: 'Fewer crowds, great resort deals and calm waters.' },
-    { id: 'switzerland', weather: '18°C • Golden Autumn Peaks', tip: 'Crisp mountain air, golden foliage and uncrowded trains.' }
+    { id: 'bali', weather: '27°C • Peaceful Tropics', tip: 'Fewer crowds, serene private pool villas and calm waters.' },
+    { id: 'asia', weather: '28°C • Complete Circuit', tip: 'Singapore, Malaysia & Thailand trio with private transport.' },
+    { id: 'singapore', weather: '28°C • Pleasant City Breeze', tip: 'Gardens by the Bay and Marina Bay sunset views.' }
   ],
   oct: [
-    { id: 'dubai', weather: '29°C • Outdoor Season Starts', tip: 'Desert safaris, Global Village opening and rooftop dining.' },
-    { id: 'turkey', weather: '21°C • Mild & Romantic', tip: 'Pleasant Bosphorus cruising and exploring underground cities.' },
-    { id: 'vietnam', weather: '25°C • Best Time for Ha Long', tip: 'Clear tranquil waters and pleasant Hanoi autumn weather.' }
+    { id: 'dubai', weather: '29°C • Outdoor Season Starts', tip: 'Desert safaris, yacht sunset cruises and rooftop dining in Dubai Marina.' },
+    { id: 'bali', weather: '28°C • Warm & Sunny', tip: 'Romantic beach dinners and Kintamani volcano excursions.' },
+    { id: 'singapore-cruise', weather: '28°C • High Seas Comfort', tip: 'Royal Caribbean and Dream Cruise sailings with Indian dining.' }
   ],
   nov: [
-    { id: 'dubai', weather: '27°C • Peak Season Begins', tip: 'F1 Grand Prix season, yacht parties and ideal beach sunshine.' },
-    { id: 'thailand', weather: '28°C • Cool Season Launch', tip: 'Loy Krathong lantern festival and calm seas in Andaman.' },
-    { id: 'maldives', weather: '29°C • Tropical Sun', tip: 'Dry sunny days and crystal-clear calm atoll waters.' }
+    { id: 'dubai', weather: '27°C • Peak Season Begins', tip: 'Perfect weather for desert dune bashing, Burj Khalifa and Abu Dhabi tours.' },
+    { id: 'singapore', weather: '28°C • Year-End Lights', tip: 'Festive street lighting, Sentosa island attractions and Changi Jewel.' },
+    { id: 'asia', weather: '28°C • Ideal Winter Vacation', tip: 'Comfortable weather across Singapore, Malaysia and Thailand.' }
   ],
   dec: [
-    { id: 'dubai', weather: '25°C • World Capital of New Year', tip: 'Burj Khalifa fireworks, cool desert nights and world-class celebrations.' },
-    { id: 'singapore', weather: '28°C • Christmas Wonderland', tip: 'Orchard Road illumination and Gardens by the Bay Christmas Wonderland.' },
-    { id: 'thailand', weather: '27°C • Year-End Holiday Haven', tip: 'Festive beach celebrations, island hopping and night markets.' }
+    { id: 'dubai', weather: '25°C • World Capital of Winter', tip: 'World-famous Burj Khalifa festivities, cool desert evenings and luxury yachting.' },
+    { id: 'singapore-cruise', weather: '28°C • High Seas Celebration', tip: 'Grand Christmas and New Year gala dinners on the ocean.' },
+    { id: 'asia', weather: '27°C • Grand Holiday Trio', tip: 'Year-end celebrations across 3 countries with complete family comfort.' }
   ]
 };
 

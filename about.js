@@ -139,5 +139,5 @@ function scrollToTop() {
 
 // Terms & Policy Modal Notice
 function openTerms(type) {
-  alert(`${type} - Shiv Safar Holidays\n\nAll journeys booked through Shiv Safar Holidays are backed by our transparent upfront pricing guarantee and MSME verified compliance. For any policy details, contact our concierge at shivsafarholidays@gmail.com or call 9512165599.`);
+  alert(`${type} - Shiv Safar Holidays\n\nAll journeys booked through Shiv Safar Holidays are backed by our transparent upfront pricing guarantee and MSME verified compliance. For any policy details, contact our concierge at shivsafarholidays@gmail.com or call 9512186116.`);
 }

@@ -164,7 +164,7 @@ function sendInquiryViaWhatsApp() {
 
   message += `\nPlease share customized itinerary options and best quote. Thank you!`;
 
-  const url = `https://wa.me/919102185599?text=${encodeURIComponent(message)}`;
+  const url = `https://wa.me/919512186116?text=${encodeURIComponent(message)}`;
   window.open(url, '_blank');
 }
 

@@ -52,12 +52,12 @@
           <span class="wishlist-count-badge" id="navWishlistCount">0</span>
         </button>
 
-        <a href="tel:9512165599" class="phone-link">
+        <a href="tel:9512186116" class="phone-link">
           <div class="phone-icon-wrap">
             <i class="fa-solid fa-phone"></i>
           </div>
           <div class="phone-info">
-            <span class="phone-number">9512165599</span>
+            <span class="phone-number">9512186116</span>
             <span class="phone-label">• Call Concierge</span>
           </div>
         </a>
@@ -293,28 +293,18 @@
           <div class="filter-tabs-scroll" id="filterTabsScroll">
             <button class="filter-pill-btn active" data-region="all">
               <i class="fa-solid fa-globe"></i>
-              <span>All Horizons</span>
-              <span class="pill-count">10</span>
+              <span>All Official Tours</span>
+              <span class="pill-count">5</span>
             </button>
             <button class="filter-pill-btn" data-region="middle-east">
               <i class="fa-solid fa-city"></i>
-              <span>Middle East & Desert Glamour</span>
-              <span class="pill-count">2</span>
+              <span>Dubai & Middle East</span>
+              <span class="pill-count">1</span>
             </button>
             <button class="filter-pill-btn" data-region="southeast-asia">
               <i class="fa-solid fa-umbrella-beach"></i>
-              <span>Southeast Asia & Tropics</span>
+              <span>Southeast Asia & Cruises</span>
               <span class="pill-count">4</span>
-            </button>
-            <button class="filter-pill-btn" data-region="island-escapes">
-              <i class="fa-solid fa-water"></i>
-              <span>Island Paradises & Atolls</span>
-              <span class="pill-count">1</span>
-            </button>
-            <button class="filter-pill-btn" data-region="europe">
-              <i class="fa-solid fa-mountain-sun"></i>
-              <span>Europe & Iconic Landmarks</span>
-              <span class="pill-count">3</span>
             </button>
           </div>
 
@@ -324,7 +314,7 @@
         </div>
 
         <div class="active-filter-indicator">
-          <span>Showing <strong id="destCountDisplay">10 Destinations</strong></span>
+          <span>Showing <strong id="destCountDisplay">5 Destinations</strong></span>
           <span class="reset-filter-link" id="resetFilterBtn" style="display:none;" onclick="resetAllFilters()">
             <i class="fa-solid fa-rotate-left"></i> Reset All Filters
           </span>
@@ -522,55 +512,39 @@
                 <td><span class="badge-visa visa-evisa">Agency eVisa</span></td>
                 <td><strong style="color:var(--color-navy);">₹1,10,000</strong></td>
                 <td>Families, Theme Parks & Cruise</td>
+                <td><button class="btn btn-gold btn-sm" style="padding:6px 14px; font-size:0.8rem;" onclick="openDestinationDetail('singapore-cruise')">View Guide</button></td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="comp-dest-cell">
+                    <img src="assets/images/pkg-asia.jpg" alt="Singapore Malaysia Thailand Trio">
+                    <div>
+                      <strong>Singapore, Malaysia & Thailand</strong>
+                      <div style="font-size:0.75rem; color:var(--color-muted);">10N / 11D</div>
+                    </div>
+                  </div>
+                </td>
+                <td>Connecting Flights</td>
+                <td><span class="badge-visa visa-free">Visa-Free / eVisa</span></td>
+                <td><strong style="color:var(--color-navy);">₹1,55,000</strong></td>
+                <td>Multi-Country Family Expedition</td>
+                <td><button class="btn btn-gold btn-sm" style="padding:6px 14px; font-size:0.8rem;" onclick="openDestinationDetail('asia')">View Guide</button></td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="comp-dest-cell">
+                    <img src="assets/images/dest-singapore.jpg" alt="Singapore Classic">
+                    <div>
+                      <strong>Singapore Classic Discovery</strong>
+                      <div style="font-size:0.75rem; color:var(--color-muted);">6D / 5N</div>
+                    </div>
+                  </div>
+                </td>
+                <td>5h 20m Direct</td>
+                <td><span class="badge-visa visa-evisa">Agency eVisa</span></td>
+                <td><strong style="color:var(--color-navy);">₹88,000</strong></td>
+                <td>City Delights, Universal & Sentosa</td>
                 <td><button class="btn btn-gold btn-sm" style="padding:6px 14px; font-size:0.8rem;" onclick="openDestinationDetail('singapore')">View Guide</button></td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="comp-dest-cell">
-                    <img src="assets/images/dest-thailand.jpg" alt="Thailand">
-                    <div>
-                      <strong>Thailand (Phuket & BKK)</strong>
-                      <div style="font-size:0.75rem; color:var(--color-muted);">5N / 6D</div>
-                    </div>
-                  </div>
-                </td>
-                <td>4h 15m Direct</td>
-                <td><span class="badge-visa visa-free">Visa-Free Entry</span></td>
-                <td><strong style="color:var(--color-navy);">₹55,000</strong></td>
-                <td>Friends Squad & Island Fun</td>
-                <td><button class="btn btn-gold btn-sm" style="padding:6px 14px; font-size:0.8rem;" onclick="openDestinationDetail('thailand')">View Guide</button></td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="comp-dest-cell">
-                    <img src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=120&q=80" alt="Maldives">
-                    <div>
-                      <strong>Maldives Sanctuary</strong>
-                      <div style="font-size:0.75rem; color:var(--color-muted);">4N / 5D</div>
-                    </div>
-                  </div>
-                </td>
-                <td>4h 00m Direct</td>
-                <td><span class="badge-visa visa-free">Free on Arrival</span></td>
-                <td><strong style="color:var(--color-navy);">₹1,25,000</strong></td>
-                <td>Ultra Luxury & Honeymoon</td>
-                <td><button class="btn btn-gold btn-sm" style="padding:6px 14px; font-size:0.8rem;" onclick="openDestinationDetail('maldives')">View Guide</button></td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="comp-dest-cell">
-                    <img src="https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?auto=format&fit=crop&w=120&q=80" alt="Switzerland">
-                    <div>
-                      <strong>Switzerland Alpine</strong>
-                      <div style="font-size:0.75rem; color:var(--color-muted);">7N / 8D</div>
-                    </div>
-                  </div>
-                </td>
-                <td>9h 30m</td>
-                <td><span class="badge-visa visa-evisa">Schengen Visa</span></td>
-                <td><strong style="color:var(--color-navy);">₹2,45,000</strong></td>
-                <td>Grand Family & Milestones</td>
-                <td><button class="btn btn-gold btn-sm" style="padding:6px 14px; font-size:0.8rem;" onclick="openDestinationDetail('switzerland')">View Guide</button></td>
               </tr>
             </tbody>
           </table>
@@ -715,7 +689,7 @@
           <button class="btn btn-gold btn-hero" onclick="openQuoteModal()">
             Request Custom Travel Itinerary <i class="fa-solid fa-arrow-right"></i>
           </button>
-          <a href="https://wa.me/919102185599?text=Hello%20Shiv%20Safar%20Holidays,%20I%20want%20to%20plan%20my%20international%20holiday%20trip!" 
+          <a href="https://wa.me/919512186116?text=Hello%20Shiv%20Safar%20Holidays,%20I%20want%20to%20plan%20my%20international%20holiday%20trip!" 
              target="_blank" rel="noopener" class="btn" style="background:#25d366; color:#ffffff; font-weight:700;">
             <i class="fa-brands fa-whatsapp"></i> Chat with Holiday Expert
           </a>
@@ -742,7 +716,7 @@
           <div class="footer-trust-icon"><i class="fa-solid fa-star"></i></div>
           <div class="footer-trust-text">
             <strong>4.9 / 5 Guest Rating</strong>
-            <span>1,200+ Verified Happy Travelers</span>
+            <span>1,500+ Verified Happy Travelers</span>
           </div>
         </div>
         <div class="footer-trust-item">
@@ -775,7 +749,7 @@
           <div class="social-links">
             <a href="https://instagram.com" target="_blank" rel="noopener" class="social-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
             <a href="https://facebook.com" target="_blank" rel="noopener" class="social-btn" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="https://wa.me/919102185599" target="_blank" rel="noopener" class="social-btn" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://wa.me/919512186116" target="_blank" rel="noopener" class="social-btn" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
             <a href="mailto:shivsafarholidays@gmail.com" class="social-btn" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
           </div>
         </div>
@@ -810,13 +784,13 @@
           <div class="footer-contact-item" style="display:flex; align-items:flex-start; gap:12px; margin-bottom:14px; font-size:0.88rem; color:#cbd5e1;">
             <div class="contact-icon" style="color:var(--primary-gold); margin-top:3px;"><i class="fa-solid fa-location-dot"></i></div>
             <div class="contact-text">
-              <span>D409, Siddharaj Square, Opp. Landmark, Kudasan, Gandhinagar, Gujarat 382421</span>
+              <span>E419, Siddharaj Square, Opp. Landmark, Kudasan, Gandhinagar, Gujarat 382421</span>
             </div>
           </div>
           <div class="footer-contact-item" style="display:flex; align-items:flex-start; gap:12px; margin-bottom:14px; font-size:0.88rem; color:#cbd5e1;">
             <div class="contact-icon" style="color:var(--primary-gold); margin-top:3px;"><i class="fa-solid fa-phone"></i></div>
             <div class="contact-text">
-              <div><a href="tel:9512165599"><strong>9512165599</strong></a> / <a href="tel:9102185599">9102185599</a></div>
+              <div><a href="tel:9512186116"><strong>9512186116</strong></a></div>
               <span style="font-size:0.75rem; color:#94a3b8;">Mon - Sun: 9:30 AM to 8:30 PM</span>
             </div>
           </div>
@@ -860,7 +834,7 @@
     <i class="fa-solid fa-chevron-up"></i>
   </button>
 
-  <a href="https://wa.me/919102185599?text=Hello%20Shiv%20Safar%20Holidays,%20I%20am%20interested%20in%20planning%20an%20international%20holiday%20trip!" 
+  <a href="https://wa.me/919512186116?text=Hello%20Shiv%20Safar%20Holidays,%20I%20am%20interested%20in%20planning%20an%20international%20holiday%20trip!" 
      target="_blank" 
      rel="noopener" 
      class="floating-btn whatsapp-float-btn" 
