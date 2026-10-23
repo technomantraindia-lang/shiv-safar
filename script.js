@@ -318,7 +318,7 @@ function openPackageModal(pkgKey) {
       <button class="btn btn-gold" style="flex:1;" onclick="closeModal('packageModal'); openQuoteModal('${data.title}');">
         Book This Package Now <i class="fa-solid fa-arrow-right"></i>
       </button>
-      <a href="https://wa.me/919512186116?text=Hello%20Shiv%20Safar%20Holidays,%20I%20am%20interested%20in%20${encodeURIComponent(data.title)}" 
+      <a href="https://wa.me/919512186116?text=Hello%20SHIV%20SAFAR%20HOLIDAYS,%20I%20am%20interested%20in%20${encodeURIComponent(data.title)}" 
          target="_blank" rel="noopener" class="btn" style="background:#25d366; color:#fff;">
         <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
       </a>
@@ -466,7 +466,7 @@ function scrollTestimonials(index) {
 }
 
 function openReviewsModal() {
-  showToast('Shiv Safar Holidays holds a 4.9/5 Star Rating with 500+ satisfied clients!');
+  showToast('SHIV SAFAR HOLIDAYS holds a 4.9/5 Star Rating with 500+ satisfied clients!');
   openQuoteModal();
 }
 

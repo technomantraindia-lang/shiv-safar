@@ -385,7 +385,7 @@ function renderDestinations() {
               <button class="btn-card-explore" onclick="openDestinationDetail('${dest.id}')">
                 Explore Guide <i class="fa-solid fa-arrow-right"></i>
               </button>
-              <a href="https://wa.me/919512186116?text=Hello%20Shiv%20Safar%20Holidays,%20I%20am%20interested%20in%20traveling%20to%20${encodeURIComponent(dest.name)}" 
+              <a href="https://wa.me/919512186116?text=Hello%20SHIV%20SAFAR%20HOLIDAYS,%20I%20am%20interested%20in%20traveling%20to%20${encodeURIComponent(dest.name)}" 
                  target="_blank" rel="noopener" class="btn-card-wa" title="WhatsApp Enquiry" aria-label="WhatsApp Enquiry">
                 <i class="fa-brands fa-whatsapp"></i>
               </a>
@@ -686,7 +686,7 @@ function openDestinationDetail(destId) {
         <button class="btn btn-gold" style="flex:1;" onclick="closeModal('destDetailModal'); openQuoteModal('${dest.name}');">
           Plan My Trip To ${dest.name} <i class="fa-solid fa-arrow-right"></i>
         </button>
-        <a href="https://wa.me/919512186116?text=Hello%20Shiv%20Safar%20Holidays,%20I%20am%20interested%20in%20customizing%20an%20itinerary%20for%20${encodeURIComponent(dest.name)}" 
+        <a href="https://wa.me/919512186116?text=Hello%20SHIV%20SAFAR%20HOLIDAYS,%20I%20am%20interested%20in%20customizing%20an%20itinerary%20for%20${encodeURIComponent(dest.name)}" 
            target="_blank" rel="noopener" class="btn" style="background:#25d366; color:#ffffff;">
           <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
         </a>

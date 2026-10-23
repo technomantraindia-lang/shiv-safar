@@ -150,7 +150,7 @@ function sendInquiryViaWhatsApp() {
   const budget = document.getElementById('cBudget').value || '4-Star Premium';
   const notes = document.getElementById('cNotes').value.trim();
 
-  let message = `Hello Shiv Safar Holidays!\n\nI would like to plan my vacation with details:\n` +
+  let message = `Hello SHIV SAFAR HOLIDAYS!\n\nI would like to plan my vacation with details:\n` +
     `• Name: ${name}\n` +
     `• Phone: ${phone || 'Not provided'}\n` +
     `• Destination: ${dest}\n` +

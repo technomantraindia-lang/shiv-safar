@@ -243,7 +243,7 @@ function initTripCustomizer() {
     const formatted = '₹' + Math.round(base).toLocaleString('en-IN');
     estimateDisplay.textContent = formatted;
 
-    const waMsg = `Hello Shiv Safar Holidays, I customized a trip spec on your website:%0A• Destination: ${dest.toUpperCase()}%0A• Stays: ${style}%0A• Duration: ${duration} Days%0A• Dietary: ${meal}%0A• Estimate: ${formatted} per person.%0APlease share the detailed proposed itinerary!`;
+    const waMsg = `Hello SHIV SAFAR HOLIDAYS, I customized a trip spec on your website:%0A• Destination: ${dest.toUpperCase()}%0A• Stays: ${style}%0A• Duration: ${duration} Days%0A• Dietary: ${meal}%0A• Estimate: ${formatted} per person.%0APlease share the detailed proposed itinerary!`;
     if (waBtn) {
       waBtn.href = `https://wa.me/919512186116?text=${waMsg}`;
     }
@@ -278,5 +278,5 @@ function scrollToTop() {
 }
 
 function openTerms(type) {
-  alert(`${type} - Shiv Safar Holidays\n\nAll package departures are backed by our transparent upfront pricing guarantee and 24/7 dedicated tour manager on-call. For queries, call 9512186116 or email shivsafarholidays@gmail.com.`);
+  alert(`${type} - SHIV SAFAR HOLIDAYS\n\nAll package departures are backed by our transparent upfront pricing guarantee and 24/7 dedicated tour manager on-call. For queries, call 9512186116 or email shivsafarholidays@gmail.com.`);
 }
