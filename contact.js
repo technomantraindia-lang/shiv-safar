@@ -127,17 +127,44 @@ function initFaqAccordion() {
 }
 
 /* --- 6. Form Submission & Celebration Toast --- */
-function handleContactSubmit(e) {
+async function handleContactSubmit(e) {
   e.preventDefault();
+  const form = e.currentTarget;
+  const submitButton = form.querySelector('button[type="submit"]');
   const name = document.getElementById('cName').value.trim();
   const phone = document.getElementById('cPhone').value.trim();
   const dest = document.getElementById('cDest').value;
-  
-  showToast(`Thank you, ${name}! Your travel inquiry for ${dest || 'your vacation'} has been received. Our senior holiday designer will call you on ${phone} within 15 minutes.`);
-  document.getElementById('contactForm').reset();
-  
-  const presetBtns = document.querySelectorAll('.preset-pill-btn');
-  presetBtns.forEach(b => b.classList.remove('active'));
+
+  if (submitButton) {
+    submitButton.disabled = true;
+    submitButton.dataset.originalText = submitButton.innerHTML;
+    submitButton.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Sending...';
+  }
+
+  try {
+    const response = await fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      body: new FormData(form),
+      headers: { Accept: 'application/json' }
+    });
+    const result = await response.json();
+
+    if (!response.ok || !result.success) {
+      throw new Error(result.message || 'The email service rejected the inquiry.');
+    }
+
+    showToast(`Thank you, ${name}! Your travel inquiry for ${dest || 'your vacation'} was sent successfully. Our senior holiday designer will call you on ${phone} within 15 minutes.`);
+    form.reset();
+    document.querySelectorAll('.preset-pill-btn').forEach(b => b.classList.remove('active'));
+  } catch (error) {
+    console.error('Contact form submission failed:', error);
+    showToast('We could not send your inquiry right now. Please try again or use the WhatsApp button.');
+  } finally {
+    if (submitButton) {
+      submitButton.disabled = false;
+      submitButton.innerHTML = submitButton.dataset.originalText || 'Submit Travel Inquiry';
+    }
+  }
 }
 
 /* --- 7. Send Inquiry Directly to WhatsApp --- */

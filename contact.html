@@ -160,14 +160,18 @@
               <button type="button" class="preset-pill-btn" data-dest="Multi-Country">🌍 SG + MY + TH Trio 10N</button>
             </div>
 
-            <form id="contactForm" onsubmit="handleContactSubmit(event)">
+            <form id="contactForm" method="POST" onsubmit="handleContactSubmit(event)">
+              <input type="hidden" name="access_key" value="d7175c52-adbd-47c6-8ad8-f97dcacbd49f">
+              <input type="hidden" name="subject" value="New Travel Inquiry - SHIV SAFAR HOLIDAYS">
+              <input type="hidden" name="from_name" value="SHIV SAFAR HOLIDAYS Website">
+              <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" style="display:none;">
               <div class="contact-input-grid">
                 <!-- Name -->
                 <div class="c-form-group">
                   <label for="cName" class="c-form-label">Full Name *</label>
                   <div class="c-input-wrap">
                     <i class="fa-solid fa-user c-input-icon"></i>
-                    <input type="text" id="cName" class="c-input-field" placeholder="e.g. Rahul Mehta" required>
+                    <input type="text" id="cName" name="name" class="c-input-field" placeholder="e.g. Rahul Mehta" required>
                   </div>
                 </div>
 
@@ -176,7 +180,7 @@
                   <label for="cPhone" class="c-form-label">Phone / WhatsApp Number *</label>
                   <div class="c-input-wrap">
                     <i class="fa-solid fa-phone c-input-icon"></i>
-                    <input type="tel" id="cPhone" class="c-input-field" placeholder="e.g. 9876543210" required>
+                    <input type="tel" id="cPhone" name="phone" class="c-input-field" placeholder="e.g. 9876543210" required>
                   </div>
                 </div>
 
@@ -185,7 +189,7 @@
                   <label for="cEmail" class="c-form-label">Email Address</label>
                   <div class="c-input-wrap">
                     <i class="fa-solid fa-envelope c-input-icon"></i>
-                    <input type="email" id="cEmail" class="c-input-field" placeholder="e.g. rahul@example.com">
+                    <input type="email" id="cEmail" name="email" class="c-input-field" placeholder="e.g. rahul@example.com">
                   </div>
                 </div>
 
@@ -194,7 +198,7 @@
                   <label for="cDest" class="c-form-label">Destination of Interest *</label>
                   <div class="c-input-wrap">
                     <i class="fa-solid fa-location-dot c-input-icon"></i>
-                    <select id="cDest" class="c-input-field c-select-field" required>
+                    <select id="cDest" name="destination" class="c-input-field c-select-field" required>
                       <option value="" disabled selected>Select Destination</option>
                       <option value="Dubai">Dubai, UAE</option>
                       <option value="Bali">Bali, Indonesia</option>
@@ -218,7 +222,7 @@
                   <label for="cDate" class="c-form-label">Estimated Travel Date / Month</label>
                   <div class="c-input-wrap">
                     <i class="fa-regular fa-calendar-days c-input-icon"></i>
-                    <input type="text" id="cDate" class="c-input-field" placeholder="e.g. November 2026 or Diwali Holidays">
+                    <input type="text" id="cDate" name="travel_date" class="c-input-field" placeholder="e.g. November 2026 or Diwali Holidays">
                   </div>
                 </div>
 
@@ -227,7 +231,7 @@
                   <label for="cGuests" class="c-form-label">Travelers Group Size</label>
                   <div class="c-input-wrap">
                     <i class="fa-solid fa-user-group c-input-icon"></i>
-                    <select id="cGuests" class="c-input-field c-select-field">
+                    <select id="cGuests" name="travelers" class="c-input-field c-select-field">
                       <option value="2 Adults (Couple)" selected>2 Adults (Couple / Honeymoon)</option>
                       <option value="1 Solo Traveler">1 Solo Traveler</option>
                       <option value="Family with Kids (3-4)">Family with Kids (3 - 4 Travelers)</option>
@@ -242,7 +246,7 @@
                   <label for="cBudget" class="c-form-label">Preferred Stay & Accommodation Style</label>
                   <div class="c-input-wrap">
                     <i class="fa-solid fa-hotel c-input-icon"></i>
-                    <select id="cBudget" class="c-input-field c-select-field">
+                    <select id="cBudget" name="accommodation" class="c-input-field c-select-field">
                       <option value="4-Star Premium">4-Star Premium Stays (Best Value & Comfort)</option>
                       <option value="5-Star Luxury">5-Star Luxury Hotels (Burj / Marina / Beachfront)</option>
                       <option value="Private Pool Villa">Private Pool Villa (Bali / Maldives Romance)</option>
@@ -255,7 +259,7 @@
                 <!-- Special Notes / Wishes -->
                 <div class="c-form-group contact-input-full">
                   <label for="cNotes" class="c-form-label">Special Requirements & Food Preferences (Optional)</label>
-                  <textarea id="cNotes" class="c-input-field c-textarea" rows="3" placeholder="Tell us if you need pure vegetarian/Jain food, flight bookings, celebration cake, private airport cab..."></textarea>
+                  <textarea id="cNotes" name="message" class="c-input-field c-textarea" rows="3" placeholder="Tell us if you need pure vegetarian/Jain food, flight bookings, celebration cake, private airport cab..."></textarea>
                 </div>
               </div>
 

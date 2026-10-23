@@ -951,15 +951,44 @@ function openQuoteModal(prefDest) {
   openModal('quoteModal');
 }
 
-function submitQuoteForm(e) {
+async function submitQuoteForm(e) {
   e.preventDefault();
+  const form = e.currentTarget;
+  const submitButton = form.querySelector('button[type="submit"]');
   const name = document.getElementById('quoteName').value;
   const phone = document.getElementById('quotePhone').value;
   const dest = document.getElementById('quoteDest').value;
 
-  closeModal('quoteModal');
-  showToast(`Thank you, ${name}! Your enquiry for ${dest} has been submitted. Our holiday expert will call you on ${phone}.`);
-  document.getElementById('quoteForm').reset();
+  if (submitButton) {
+    submitButton.disabled = true;
+    submitButton.dataset.originalText = submitButton.innerHTML;
+    submitButton.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Sending...';
+  }
+
+  try {
+    const response = await fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      body: new FormData(form),
+      headers: { Accept: 'application/json' }
+    });
+    const result = await response.json();
+
+    if (!response.ok || !result.success) {
+      throw new Error(result.message || 'The email service rejected the quote request.');
+    }
+
+    closeModal('quoteModal');
+    showToast(`Thank you, ${name}! Your enquiry for ${dest} was sent successfully. Our holiday expert will call you on ${phone}.`);
+    form.reset();
+  } catch (error) {
+    console.error('Quote form submission failed:', error);
+    showToast('We could not send your quote request right now. Please try again or contact us on WhatsApp.');
+  } finally {
+    if (submitButton) {
+      submitButton.disabled = false;
+      submitButton.innerHTML = submitButton.dataset.originalText || 'Submit Enquiry';
+    }
+  }
 }
 
 function showToast(msg) {

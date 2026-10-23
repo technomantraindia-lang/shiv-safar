@@ -1205,25 +1205,29 @@
         <h3 class="modal-title">Get Your Free Travel Quote</h3>
         <p class="modal-sub">Tell us where you want to go and our travel specialists will curate the best itinerary for you.</p>
       </div>
-      <form id="quoteForm" onsubmit="submitQuoteForm(event)">
+      <form id="quoteForm" method="POST" onsubmit="submitQuoteForm(event)">
+        <input type="hidden" name="access_key" value="d7175c52-adbd-47c6-8ad8-f97dcacbd49f">
+        <input type="hidden" name="subject" value="New Quote Request - SHIV SAFAR HOLIDAYS">
+        <input type="hidden" name="from_name" value="SHIV SAFAR HOLIDAYS Website">
+        <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" style="display:none;">
         <div class="form-row">
           <div class="form-group">
             <label for="quoteName">Full Name *</label>
-            <input type="text" id="quoteName" placeholder="e.g. Rahul Mehta" required>
+            <input type="text" id="quoteName" name="name" placeholder="e.g. Rahul Mehta" required>
           </div>
           <div class="form-group">
             <label for="quotePhone">Phone / WhatsApp Number *</label>
-            <input type="tel" id="quotePhone" placeholder="e.g. 9876543210" required>
+            <input type="tel" id="quotePhone" name="phone" placeholder="e.g. 9876543210" required>
           </div>
         </div>
         <div class="form-row">
           <div class="form-group">
             <label for="quoteEmail">Email Address</label>
-            <input type="email" id="quoteEmail" placeholder="e.g. rahul@example.com">
+            <input type="email" id="quoteEmail" name="email" placeholder="e.g. rahul@example.com">
           </div>
           <div class="form-group">
             <label for="quoteDest">Destination *</label>
-            <select id="quoteDest" required>
+            <select id="quoteDest" name="destination" required>
               <option value="" disabled selected>Select Destination</option>
               <option value="Dubai">Dubai, UAE</option>
               <option value="Bali">Bali, Indonesia</option>
@@ -1238,11 +1242,11 @@
         <div class="form-row">
           <div class="form-group">
             <label for="quoteDate">Expected Travel Date</label>
-            <input type="date" id="quoteDate">
+            <input type="date" id="quoteDate" name="travel_date">
           </div>
           <div class="form-group">
             <label for="quoteGuests">Number of Guests</label>
-            <select id="quoteGuests">
+            <select id="quoteGuests" name="travelers">
               <option value="1 Adult">1 Adult</option>
               <option value="2 Adults (Couple)" selected>2 Adults (Couple)</option>
               <option value="Family (3-4)">Family (3-4 Guests)</option>
@@ -1252,7 +1256,7 @@
         </div>
         <div class="form-group">
           <label for="quoteMsg">Special Requirements or Budget (Optional)</label>
-          <textarea id="quoteMsg" rows="3" placeholder="Tell us any preferences like 4-star/5-star stays, veg food, specific activities..."></textarea>
+          <textarea id="quoteMsg" name="message" rows="3" placeholder="Tell us any preferences like 4-star/5-star stays, veg food, specific activities..."></textarea>
         </div>
         <button type="submit" class="btn btn-gold btn-submit-full">
           Submit Enquiry & Get Itinerary <i class="fa-solid fa-arrow-right"></i>
